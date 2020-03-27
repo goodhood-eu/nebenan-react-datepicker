@@ -1,18 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { getMonthDetails, getToday } from './utils.es';
 import clsx from 'clsx';
 import { formatNumber as pad } from 'nebenan-helpers/lib/formatters';
 import { arrayOf } from 'nebenan-helpers/lib/data';
+import { getMonthDetails, getToday } from './utils';
 
-const Controls = () => {
-  return (
-    <div>
-      <button>back</button>
-      <button>forward</button>
-    </div>
-  );
-};
+const Controls = () => (
+  <div>
+    <button>back</button>
+    <button>forward</button>
+  </div>
+);
 
 const DAYS_COUNT = 7;
 
@@ -28,8 +26,7 @@ const renderLabelsRow = (locale) => {
   return <tr>{labels}</tr>;
 };
 
-const renderMonth = (props) => {
-  const { month, dates, render, onCellClick } = props;
+const renderMonth = ({ month, onCellClick }) => {
   const { days, offset } = getMonthDetails(month);
 
   const weeks = Math.ceil((days + offset) / DAYS_COUNT);
@@ -43,11 +40,8 @@ const renderMonth = (props) => {
       const date = shift + day + 1 - offset;
 
       const key = `${month}-${pad(date)}`;
-      const item = dates && dates[key];
-      const children = item && <div className="c-month_calendar-content">{render(item, key)}</div>;
 
       const className = clsx('c-month_calendar-cell', {
-        'has-children': children,
         'is-today': today === key,
       });
 
@@ -58,12 +52,12 @@ const renderMonth = (props) => {
       if (!isStartFiller && !isEndFiller) {
         const handleClick = onCellClick ? onCellClick.bind(null, key) : null;
         const labelClassName = clsx('c-month_calendar-date', {
-          'is-interactive': item && onCellClick,
+          'is-interactive': false,
         });
         label = <span className={labelClassName} onClick={handleClick}>{date}</span>;
       }
 
-      return <td key={date} className={className}>{label}{children}</td>;
+      return <td key={date} className={className}>{label}</td>;
     });
 
     return <tr key={week}>{items}</tr>;
@@ -72,21 +66,17 @@ const renderMonth = (props) => {
   return arrayOf(weeks).map(renderWeek);
 };
 
-const Calendar = (props) => {
-  const render = () => {
-    console.log("i am here");
-    return <strong>inside render</strong>;
-  };
+const Calendar = ({ locale }) => {
   const onCellClick = () => {
     console.log('cell click');
   };
-  const month = '2020-05';
-  const dates = {};
 
-  const rows = renderMonth({ month, dates, render, onCellClick });
+  const month = '2020-05';
+
+  const rows = renderMonth({ month, onCellClick });
   return (
     <table className="c-month_calendar-table" cellSpacing="0">
-      <thead>{renderLabelsRow(props.locale)}</thead>
+      <thead>{renderLabelsRow(locale)}</thead>
       <tbody>{rows}</tbody>
     </table>
   );
