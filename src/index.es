@@ -1,3 +1,3 @@
-import React from 'react';
+import MonthCalendar from './month_calendar/index';
 
-export default () => <h1>Hello World</h1>;
+export default MonthCalendar;

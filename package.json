@@ -95,5 +95,8 @@
     "nebenan-ui-kit": "^4.4.1",
     "node-sass-glob-importer": "^5.3.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "date-fns": "^2.11.0",
+    "nebenan-helpers": "^4.1.1"
+  }
 }
