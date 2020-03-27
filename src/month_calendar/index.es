@@ -1,16 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { formatNumber as pad } from 'nebenan-helpers/lib/formatters';
 import { arrayOf } from 'nebenan-helpers/lib/data';
-import { getMonthDetails, getToday } from './utils';
+import { getMonthDetails, getToday, getMonthLabel, getMonthString } from './utils';
 
-const Controls = () => (
-  <div>
-    <button>back</button>
-    <button>forward</button>
-  </div>
-);
+
+const Controls = ({ label, onNext, onPrevious }) => {
+  const handlePrevious = () => onPrevious();
+  const handleNext = () => onNext();
+
+  return (
+    <div style={{ display: 'flex' }}>
+      <i onClick={handlePrevious}>
+        ←
+      </i>
+      <h2>{label}</h2>
+      <i onClick={handleNext}>
+        →
+      </i>
+    </div>
+  );
+};
 
 const DAYS_COUNT = 7;
 
@@ -26,7 +37,7 @@ const renderLabelsRow = (locale) => {
   return <tr>{labels}</tr>;
 };
 
-const renderMonth = ({ month, onCellClick }) => {
+const renderMonth = ({ month, selected, onCellClick }) => {
   const { days, offset } = getMonthDetails(month);
 
   const weeks = Math.ceil((days + offset) / DAYS_COUNT);
@@ -43,6 +54,7 @@ const renderMonth = ({ month, onCellClick }) => {
 
       const className = clsx('c-month_calendar-cell', {
         'is-today': today === key,
+        'is-selected': key === selected,
       });
 
       const isStartFiller = isFirstWeek && day < offset;
@@ -66,14 +78,8 @@ const renderMonth = ({ month, onCellClick }) => {
   return arrayOf(weeks).map(renderWeek);
 };
 
-const Calendar = ({ locale }) => {
-  const onCellClick = () => {
-    console.log('cell click');
-  };
-
-  const month = '2020-05';
-
-  const rows = renderMonth({ month, onCellClick });
+const Calendar = ({ locale, month, selected, onCellClick }) => {
+  const rows = renderMonth({ month, selected, onCellClick });
   return (
     <table className="c-month_calendar-table" cellSpacing="0">
       <thead>{renderLabelsRow(locale)}</thead>
@@ -82,24 +88,48 @@ const Calendar = ({ locale }) => {
   );
 };
 
-const MonthCalendar = ({ className: passedClassName, locale }) => {
+const MonthCalendar = ({ className: passedClassName, locale, defaultMonth, selected, onChange }) => {
+  const [month, setMonth] = useState(defaultMonth);
+
+  useEffect(() => {
+    setMonth(defaultMonth);
+  }, [defaultMonth]);
+
+  const handleNextMonth = () => {
+    setMonth(getMonthString(month, 1));
+  };
+
+  const handlePreviousMonth = () => {
+    setMonth(getMonthString(month, -1));
+  };
+
+
   const className = passedClassName;
-  const monthLabel = 'January';
+  const monthLabel = getMonthLabel(month, locale);
+
+  const onCellClick = onChange;
 
   return (
     <article className={className}>
       <header className="c-month_calendar-header ui-card-section">
-        <h2>{monthLabel}</h2>
-        <Controls />
+        <Controls
+          label={monthLabel}
+          onNext={handleNextMonth}
+          onPrevious={handlePreviousMonth}
+        />
       </header>
-      <Calendar {...{ locale }} />
+      <Calendar {...{ locale, month, selected, onCellClick }} />
     </article>
   );
 };
 
 MonthCalendar.propTypes = {
   className: PropTypes.string,
+  defaultMonth: PropTypes.string.isRequired,
   locale: PropTypes.object,
+
+  selected: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default MonthCalendar;

@@ -22,3 +22,8 @@ main {
 .preview-fancy_image {
   background: $color-purple-00;
 }
+
+// TODO remove
+.c-month_calendar-cell.is-selected {
+  font-weight: bold;
+}
