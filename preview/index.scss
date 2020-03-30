@@ -47,6 +47,12 @@ main {
   cursor: pointer;
 }
 
+.c-datepicker-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .c-datepicker {
   width: 200px;
 }
