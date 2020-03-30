@@ -27,3 +27,7 @@ main {
 .c-month_calendar-cell.is-selected {
   font-weight: bold;
 }
+
+.c-month_calendar-cell.is-disabled {
+  color: #cfcfcf;
+}

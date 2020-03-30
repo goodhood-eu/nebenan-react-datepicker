@@ -11,6 +11,19 @@ export const getMonthString = (current, diff = 0) => (
   formatDate(current ? addMonths(getMonth(current), diff) : new Date(), 'yyyy-MM')
 );
 
+const getISODate = (date) => {
+  if (date instanceof Date) return formatDate(date, 'yyyy-MM-dd');
+  return date;
+};
+
+export const isBefore = (dateA, dateB) => {
+  return getISODate(dateA) < getISODate(dateB);
+};
+
+export const isAfter = (dateA, dateB) => {
+  return getISODate(dateA) > getISODate(dateB);
+};
+
 export const getMonthLabel = (string, locale) => {
   const date = getMonth(string);
   const { modules: { calendar: { months } } } = locale;

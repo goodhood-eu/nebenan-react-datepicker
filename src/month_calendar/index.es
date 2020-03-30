@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { formatNumber as pad } from 'nebenan-helpers/lib/formatters';
 import { arrayOf } from 'nebenan-helpers/lib/data';
-import { getMonthDetails, getToday, getMonthLabel, getMonthString } from './utils';
+import { getMonthDetails, getToday, getMonthLabel, getMonthString, isAfter, isBefore } from './utils';
 
 
 const Controls = ({ label, onNext, onPrevious }) => {
@@ -37,7 +37,7 @@ const renderLabelsRow = (locale) => {
   return <tr>{labels}</tr>;
 };
 
-const renderMonth = ({ month, selected, onCellClick }) => {
+const renderMonth = ({ month, minDate, maxDate, selected, onCellClick }) => {
   const { days, offset } = getMonthDetails(month);
 
   const weeks = Math.ceil((days + offset) / DAYS_COUNT);
@@ -52,9 +52,15 @@ const renderMonth = ({ month, selected, onCellClick }) => {
 
       const key = `${month}-${pad(date)}`;
 
+      const isBeforeMinDate = minDate ? isBefore(key, minDate) : false;
+      const isAfterMaxDate = maxDate ? isAfter(key, maxDate) : false;
+
+      const isDisabled = isBeforeMinDate || isAfterMaxDate;
+
       const className = clsx('c-month_calendar-cell', {
         'is-today': today === key,
         'is-selected': key === selected,
+        'is-disabled': isDisabled,
       });
 
       const isStartFiller = isFirstWeek && day < offset;
@@ -62,7 +68,7 @@ const renderMonth = ({ month, selected, onCellClick }) => {
 
       let label;
       if (!isStartFiller && !isEndFiller) {
-        const handleClick = onCellClick ? onCellClick.bind(null, key) : null;
+        const handleClick = onCellClick && !isDisabled ? onCellClick.bind(null, key) : null;
         const labelClassName = clsx('c-month_calendar-date', {
           'is-interactive': false,
         });
@@ -78,8 +84,8 @@ const renderMonth = ({ month, selected, onCellClick }) => {
   return arrayOf(weeks).map(renderWeek);
 };
 
-const Calendar = ({ locale, month, selected, onCellClick }) => {
-  const rows = renderMonth({ month, selected, onCellClick });
+const Calendar = ({ locale, month, minDate, maxDate, selected, onCellClick }) => {
+  const rows = renderMonth({ month, minDate, maxDate, selected, onCellClick });
   return (
     <table className="c-month_calendar-table" cellSpacing="0">
       <thead>{renderLabelsRow(locale)}</thead>
@@ -88,7 +94,15 @@ const Calendar = ({ locale, month, selected, onCellClick }) => {
   );
 };
 
-const MonthCalendar = ({ className: passedClassName, locale, defaultMonth, selected, onChange }) => {
+const MonthCalendar = ({
+  className: passedClassName,
+  locale,
+  defaultMonth,
+  selected,
+  onChange,
+  minDate,
+  maxDate,
+}) => {
   const [month, setMonth] = useState(defaultMonth);
 
   useEffect(() => {
@@ -118,7 +132,7 @@ const MonthCalendar = ({ className: passedClassName, locale, defaultMonth, selec
           onPrevious={handlePreviousMonth}
         />
       </header>
-      <Calendar {...{ locale, month, selected, onCellClick }} />
+      <Calendar {...{ locale, month, minDate, maxDate, selected, onCellClick }} />
     </article>
   );
 };
@@ -130,6 +144,14 @@ MonthCalendar.propTypes = {
 
   selected: PropTypes.string,
   onChange: PropTypes.func.isRequired,
+  minDate: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.string,
+  ]),
+  maxDate: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.string,
+  ]),
 };
 
 export default MonthCalendar;
