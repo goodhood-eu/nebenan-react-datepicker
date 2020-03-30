@@ -23,7 +23,6 @@ main {
   background: $color-purple-00;
 }
 
-// TODO remove
 .c-month_calendar-cell.is-selected {
   font-weight: bold;
 }
@@ -32,6 +31,31 @@ main {
   color: #cfcfcf;
 }
 
-.c-month_calendar-month_navigation .is-disabled {
+.c-month_calendar-cell.is-interactive {
+  cursor: pointer;
+}
+
+.c-month_calendar-cell.is-interactive:hover {
+  background: #c0c0c0;
+}
+
+.c-datepicker-controls .is-disabled {
   color: #cfcfcf;
+}
+
+.c-datepicker-controls :not(.is-disabled) {
+  cursor: pointer;
+}
+
+.c-datepicker {
+  width: 200px;
+}
+
+.c-month_calendar-table {
+  width: 100%;
+}
+
+.c-datepicker-controls {
+  display: flex;
+  justify-content: space-between;
 }

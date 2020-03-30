@@ -3,7 +3,15 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { formatNumber as pad } from 'nebenan-helpers/lib/formatters';
 import { arrayOf } from 'nebenan-helpers/lib/data';
-import { getMonthDetails, getToday, getMonthLabel, getMonthString, isAfter, isBefore, isMonthInYearRange } from './utils';
+import {
+  getMonthDetails,
+  getMonthLabel,
+  getMonthString,
+  getToday,
+  isAfter,
+  isBefore,
+  isMonthInYearRange,
+} from './utils';
 
 
 const Controls = ({ label, onNext, onPrevious }) => {
@@ -23,7 +31,7 @@ const Controls = ({ label, onNext, onPrevious }) => {
   });
 
   return (
-    <div style={{ display: 'flex' }} className="c-month_calendar-month_navigation">
+    <div className="c-datepicker-controls">
       <i onClick={handlePrevious} className={previousClasses}>
         ←
       </i>
@@ -69,22 +77,20 @@ const renderMonth = ({ month, minDate, maxDate, selected, onCellClick }) => {
 
       const isDisabled = isBeforeMinDate || isAfterMaxDate;
 
+      const isStartFiller = isFirstWeek && day < offset;
+      const isEndFiller = date > days;
+
       const className = clsx('c-month_calendar-cell', {
         'is-today': today === key,
         'is-selected': key === selected,
         'is-disabled': isDisabled,
+        'is-interactive': !isDisabled && !isStartFiller && !isEndFiller
       });
-
-      const isStartFiller = isFirstWeek && day < offset;
-      const isEndFiller = date > days;
 
       let label;
       if (!isStartFiller && !isEndFiller) {
         const handleClick = onCellClick && !isDisabled ? onCellClick.bind(null, key) : null;
-        const labelClassName = clsx('c-month_calendar-date', {
-          'is-interactive': false,
-        });
-        label = <span className={labelClassName} onClick={handleClick}>{date}</span>;
+        label = <span className="c-month_calendar-date" onClick={handleClick}>{date}</span>;
       }
 
       return <td key={date} className={className}>{label}</td>;
@@ -136,14 +142,14 @@ const MonthCalendar = ({
     && isMonthInYearRange(getMonthString(month, -1), yearRange);
 
 
-  const className = passedClassName;
+  const className = clsx('c-datepicker', passedClassName);
   const monthLabel = getMonthLabel(month, locale);
 
   const onCellClick = onChange;
 
   return (
     <article className={className}>
-      <header className="c-month_calendar-header ui-card-section">
+      <header className="ui-card-section">
         <Controls
           label={monthLabel}
           onNext={canNavigateNextMonth && handleNextMonth}
