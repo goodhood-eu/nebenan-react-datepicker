@@ -10,7 +10,6 @@ import {
   getToday,
   isAfter,
   isBefore,
-  isMonthInYearRange,
 } from './utils';
 
 
@@ -22,21 +21,13 @@ const Controls = ({ label, onNext, onPrevious }) => {
     if (onNext) return onNext();
   };
 
-  const previousClasses = clsx('c-datepicker-controls-previous', {
-    'is-disabled': !onPrevious,
-  });
-
-  const nextClasses = clsx('c-datepicker-controls-next', {
-    'is-disabled': !onNext,
-  });
-
   return (
     <div className="c-datepicker-controls">
-      <i onClick={handlePrevious} className={previousClasses}>
+      <i onClick={handlePrevious} className='c-datepicker-controls-previous'>
         ←
       </i>
       <span className="c-datepicker-controls-label">{label}</span>
-      <i onClick={handleNext} className={nextClasses}>
+      <i onClick={handleNext} className="c-datepicker-controls-next">
         →
       </i>
     </div>
@@ -120,7 +111,6 @@ const MonthCalendar = ({
   onChange,
   minDate,
   maxDate,
-  yearRange,
 }) => {
   const [month, setMonth] = useState(defaultMonth);
 
@@ -136,12 +126,6 @@ const MonthCalendar = ({
     setMonth(getMonthString(month, -1));
   };
 
-  const canNavigateNextMonth = yearRange
-    && isMonthInYearRange(getMonthString(month, 1), yearRange);
-  const canNavigatePreviousMonth = yearRange
-    && isMonthInYearRange(getMonthString(month, -1), yearRange);
-
-
   const className = clsx('c-datepicker', passedClassName);
   const monthLabel = getMonthLabel(month, locale);
 
@@ -152,8 +136,8 @@ const MonthCalendar = ({
       <header className="ui-card-section">
         <Controls
           label={monthLabel}
-          onNext={canNavigateNextMonth && handleNextMonth}
-          onPrevious={canNavigatePreviousMonth && handlePreviousMonth}
+          onNext={handleNextMonth}
+          onPrevious={handlePreviousMonth}
         />
       </header>
       <Calendar {...{ locale, month, minDate, maxDate, selected, onCellClick }} />
@@ -175,10 +159,6 @@ MonthCalendar.propTypes = {
   maxDate: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.string,
-  ]),
-  yearRange: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.array,
   ]),
 };
 

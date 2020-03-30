@@ -39,11 +39,7 @@ main {
   background: #c0c0c0;
 }
 
-.c-datepicker-controls .is-disabled {
-  color: #cfcfcf;
-}
-
-.c-datepicker-controls :not(.is-disabled) {
+.c-datepicker-controls-previous, .c-datepicker-controls-next {
   cursor: pointer;
 }
 
