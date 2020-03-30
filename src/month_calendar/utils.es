@@ -11,6 +11,27 @@ export const getMonthString = (current, diff = 0) => (
   formatDate(current ? addMonths(getMonth(current), diff) : new Date(), 'yyyy-MM')
 );
 
+export const isMonthInYearRange = (month, yearRange) => {
+  let upperEnd;
+  let lowerEnd;
+
+  if (Array.isArray(yearRange)) {
+    upperEnd = yearRange[1];
+    lowerEnd = yearRange[0];
+  } else if (Number.isInteger(yearRange)) {
+    const currentYear = new Date().getFullYear();
+
+    upperEnd = currentYear + yearRange + 1;
+    lowerEnd = currentYear - yearRange;
+  } else {
+    return true;
+  }
+
+  const year = parseInt(month.split('-')[0], 10);
+
+  return year >= lowerEnd && year < upperEnd;
+};
+
 const getISODate = (date) => {
   if (date instanceof Date) return formatDate(date, 'yyyy-MM-dd');
   return date;
@@ -27,7 +48,7 @@ export const isAfter = (dateA, dateB) => {
 export const getMonthLabel = (string, locale) => {
   const date = getMonth(string);
   const { modules: { calendar: { months } } } = locale;
-  return months[date.getMonth()];
+  return `${months[date.getMonth()]} ${date.getFullYear()}`;
 };
 
 export const getMonthDetails = (string) => {

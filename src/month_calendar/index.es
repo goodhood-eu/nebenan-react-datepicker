@@ -3,20 +3,32 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { formatNumber as pad } from 'nebenan-helpers/lib/formatters';
 import { arrayOf } from 'nebenan-helpers/lib/data';
-import { getMonthDetails, getToday, getMonthLabel, getMonthString, isAfter, isBefore } from './utils';
+import { getMonthDetails, getToday, getMonthLabel, getMonthString, isAfter, isBefore, isMonthInYearRange } from './utils';
 
 
 const Controls = ({ label, onNext, onPrevious }) => {
-  const handlePrevious = () => onPrevious();
-  const handleNext = () => onNext();
+  const handlePrevious = () => {
+    if (onPrevious) return onPrevious();
+  };
+  const handleNext = () => {
+    if (onNext) return onNext();
+  };
+
+  const previousClasses = clsx({
+    'is-disabled': !onPrevious,
+  });
+
+  const nextClasses = clsx({
+    'is-disabled': !onNext,
+  });
 
   return (
-    <div style={{ display: 'flex' }}>
-      <i onClick={handlePrevious}>
+    <div style={{ display: 'flex' }} className="c-month_calendar-month_navigation">
+      <i onClick={handlePrevious} className={previousClasses}>
         ←
       </i>
       <h2>{label}</h2>
-      <i onClick={handleNext}>
+      <i onClick={handleNext} className={nextClasses}>
         →
       </i>
     </div>
@@ -102,6 +114,7 @@ const MonthCalendar = ({
   onChange,
   minDate,
   maxDate,
+  yearRange,
 }) => {
   const [month, setMonth] = useState(defaultMonth);
 
@@ -117,6 +130,11 @@ const MonthCalendar = ({
     setMonth(getMonthString(month, -1));
   };
 
+  const canNavigateNextMonth = yearRange
+    && isMonthInYearRange(getMonthString(month, 1), yearRange);
+  const canNavigatePreviousMonth = yearRange
+    && isMonthInYearRange(getMonthString(month, -1), yearRange);
+
 
   const className = passedClassName;
   const monthLabel = getMonthLabel(month, locale);
@@ -128,8 +146,8 @@ const MonthCalendar = ({
       <header className="c-month_calendar-header ui-card-section">
         <Controls
           label={monthLabel}
-          onNext={handleNextMonth}
-          onPrevious={handlePreviousMonth}
+          onNext={canNavigateNextMonth && handleNextMonth}
+          onPrevious={canNavigatePreviousMonth && handlePreviousMonth}
         />
       </header>
       <Calendar {...{ locale, month, minDate, maxDate, selected, onCellClick }} />
@@ -151,6 +169,10 @@ MonthCalendar.propTypes = {
   maxDate: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.string,
+  ]),
+  yearRange: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.array,
   ]),
 };
 
