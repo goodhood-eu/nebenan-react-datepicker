@@ -23,19 +23,19 @@ main {
   background: $color-purple-00;
 }
 
-.c-month_calendar-cell.is-selected {
+.c-datepicker-cell.is-selected {
   font-weight: bold;
 }
 
-.c-month_calendar-cell.is-disabled {
+.c-datepicker-cell.is-disabled {
   color: #cfcfcf;
 }
 
-.c-month_calendar-cell.is-interactive {
+.c-datepicker-cell.is-interactive {
   cursor: pointer;
 }
 
-.c-month_calendar-cell.is-interactive:hover {
+.c-datepicker-cell.is-interactive:hover {
   background: #c0c0c0;
 }
 
@@ -51,7 +51,7 @@ main {
   width: 200px;
 }
 
-.c-month_calendar-table {
+.c-datepicker-table {
   width: 100%;
 }
 
