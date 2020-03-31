@@ -104,18 +104,20 @@ const MonthCalendar = ({
   minDate,
   maxDate,
 }) => {
-  const [month, setMonth] = useState(getMonthString());
+  const [month, setMonth] = useState(null);
+
+  const monthWithDefault = month || getMonthString(selected);
 
   const handleNextMonth = () => {
-    setMonth(getMonthString(month, 1));
+    setMonth(getMonthString(monthWithDefault, 1));
   };
 
   const handlePreviousMonth = () => {
-    setMonth(getMonthString(month, -1));
+    setMonth(getMonthString(monthWithDefault, -1));
   };
 
   const className = clsx('c-datepicker', passedClassName);
-  const monthLabel = getMonthLabel(month, locale);
+  const monthLabel = getMonthLabel(monthWithDefault , locale);
 
   const onCellClick = onChange;
 
@@ -128,7 +130,7 @@ const MonthCalendar = ({
           onPrevious={handlePreviousMonth}
         />
       </header>
-      <Calendar {...{ locale, month, minDate, maxDate, selected, onCellClick }} />
+      <Calendar {...{ locale, month: monthWithDefault, minDate, maxDate, selected, onCellClick }} />
     </article>
   );
 };

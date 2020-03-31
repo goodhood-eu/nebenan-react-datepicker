@@ -4,7 +4,7 @@ import DatePicker from '../../../src';
 import locale from './locale';
 
 export default () => {
-  const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedDate, setSelectedDate] = useState('2020-04-05');
 
   const handleDateSelect = (date) => {
     setSelectedDate(date);
