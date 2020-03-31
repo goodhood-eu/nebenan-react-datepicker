@@ -20,7 +20,6 @@ export default () => {
         <DatePicker
           locale={locale}
           selected={selectedDate}
-          defaultMonth="2020-04"
           minDate={minDate}
           maxDate={maxDate}
           onChange={handleDateSelect}

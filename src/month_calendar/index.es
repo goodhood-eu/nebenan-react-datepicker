@@ -99,17 +99,12 @@ const Calendar = ({ locale, month, minDate, maxDate, selected, onCellClick }) =>
 const MonthCalendar = ({
   className: passedClassName,
   locale,
-  defaultMonth,
   selected,
   onChange,
   minDate,
   maxDate,
 }) => {
-  const [month, setMonth] = useState(defaultMonth);
-
-  useEffect(() => {
-    setMonth(defaultMonth);
-  }, [defaultMonth]);
+  const [month, setMonth] = useState(getMonthString());
 
   const handleNextMonth = () => {
     setMonth(getMonthString(month, 1));
@@ -140,7 +135,6 @@ const MonthCalendar = ({
 
 MonthCalendar.propTypes = {
   className: PropTypes.string,
-  defaultMonth: PropTypes.string.isRequired,
   locale: PropTypes.object,
 
   selected: PropTypes.string,
