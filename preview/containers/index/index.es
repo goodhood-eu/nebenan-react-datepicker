@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import Header from '../../components/header';
 import DatePicker from '../../../src';
 import locale from './locale';
+import theme from './theme';
 
 export default () => {
   const [preselectedDate, setPreselectedDate] = useState('1994-05-16');
   const [selectedDate, setSelectedDate] = useState(null);
+
+  const defaults = { theme, ...locale };
 
   return (
     <article>
@@ -19,7 +22,7 @@ export default () => {
               selected={selectedDate}
               onChange={setSelectedDate}
 
-              {...locale}
+              {...defaults}
             />
           </li>
           <li>
@@ -29,7 +32,7 @@ export default () => {
               selected={preselectedDate}
               onChange={setPreselectedDate}
 
-              {...locale}
+              {...defaults}
             />
           </li>
           <li>
@@ -41,7 +44,7 @@ export default () => {
               minDate={new Date(2020, 2, 1)}
               maxDate={new Date(2020, 4, 1)}
 
-              {...locale}
+              {...defaults}
             />
           </li>
           <li>
@@ -52,7 +55,7 @@ export default () => {
               onChange={setSelectedDate}
               maxDate={new Date(2020, 4, 1)}
 
-              {...locale}
+              {...defaults}
             />
 
           </li>
@@ -64,7 +67,7 @@ export default () => {
               maxDate={new Date(2020, 4, 1)}
               minDate={new Date(2020, 2, 1)}
 
-              {...locale}
+              {...defaults}
             />
           </li>
         </ul>

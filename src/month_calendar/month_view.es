@@ -6,19 +6,19 @@ import { getMonthDetails, getToday, isAfter, isBefore } from './utils';
 
 const DAYS_COUNT = 7;
 
-const renderLabelsRow = (locale) => {
+const renderLabelsRow = (locale, theme) => {
   const { firstDay, weekdayShortLabels } = locale;
   const labels = arrayOf(DAYS_COUNT).map((i) => {
     const key = i + firstDay > 6 ? 0 : i + firstDay;
-    const className = clsx('c-datepicker-label', {
-      'is-weekend': key === 6 || key === 0,
+    const className = clsx(theme.weekdayLabel, {
+      [theme.isWeekend]: key === 6 || key === 0,
     });
     return <th key={key} className={className}>{weekdayShortLabels[key]}</th>;
   });
   return <tr>{labels}</tr>;
 };
 
-const renderMonth = ({ month, minDate, maxDate, selected, onCellClick }) => {
+const renderMonth = ({ theme, month, minDate, maxDate, selected, onCellClick }) => {
   const { days, offset } = getMonthDetails(month);
 
   const weeks = Math.ceil((days + offset) / DAYS_COUNT);
@@ -41,17 +41,17 @@ const renderMonth = ({ month, minDate, maxDate, selected, onCellClick }) => {
       const isStartFiller = isFirstWeek && day < offset;
       const isEndFiller = date > days;
 
-      const className = clsx('c-datepicker-cell', {
-        'is-today': today === key,
-        'is-selected': key === selected,
-        'is-disabled': isDisabled,
-        'is-interactive': !isDisabled && !isStartFiller && !isEndFiller,
+      const className = clsx(theme.cell, {
+        [theme.isToday]: today === key,
+        [theme.isSelected]: key === selected,
+        [theme.isDisabled]: isDisabled,
+        [theme.isInteractive]: !isDisabled && !isStartFiller && !isEndFiller,
       });
 
       let label;
       if (!isStartFiller && !isEndFiller) {
         const handleClick = onCellClick && !isDisabled ? onCellClick.bind(null, key) : null;
-        label = <span className="c-datepicker-date" onClick={handleClick}>{date}</span>;
+        label = <span className={theme.date} onClick={handleClick}>{date}</span>;
       }
 
       return <td key={date} className={className}>{label}</td>;
@@ -63,11 +63,11 @@ const renderMonth = ({ month, minDate, maxDate, selected, onCellClick }) => {
   return arrayOf(weeks).map(renderWeek);
 };
 
-const MonthView = ({ locale, month, minDate, maxDate, selected, onCellClick }) => {
-  const rows = renderMonth({ month, minDate, maxDate, selected, onCellClick });
+const MonthView = ({ theme, locale, month, minDate, maxDate, selected, onCellClick }) => {
+  const rows = renderMonth({ theme, month, minDate, maxDate, selected, onCellClick });
   return (
-    <table className="c-datepicker-table" cellSpacing="0">
-      <thead>{renderLabelsRow(locale)}</thead>
+    <table className={theme.table} cellSpacing="0">
+      <thead>{renderLabelsRow(locale, theme)}</thead>
       <tbody>{rows}</tbody>
     </table>
   );

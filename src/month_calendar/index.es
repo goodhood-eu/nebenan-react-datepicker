@@ -7,13 +7,13 @@ import {
 } from './utils';
 import MonthView from './month_view';
 
-const Controls = ({ label, onNext, onPrevious }) => (
-  <div className="c-datepicker-controls">
-    <i onClick={onPrevious} className='c-datepicker-controls-previous'>
+const Controls = ({ theme, label, onNext, onPrevious }) => (
+  <div className={theme.controls}>
+    <i onClick={onPrevious} className={theme.controlsPrevious}>
       ←
     </i>
-    <span className="c-datepicker-controls-label">{label}</span>
-    <i onClick={onNext} className="c-datepicker-controls-next">
+    <span className={theme.controlsLabel}>{label}</span>
+    <i onClick={onNext} className={theme.controlsNext}>
       →
     </i>
   </div>
@@ -21,6 +21,7 @@ const Controls = ({ label, onNext, onPrevious }) => (
 
 const MonthCalendar = ({
   className: passedClassName,
+  theme,
 
   firstDay,
   weekdayShortLabels,
@@ -44,22 +45,23 @@ const MonthCalendar = ({
     setMonth(getMonthString(monthWithDefault, -1));
   };
 
-  const className = clsx('c-datepicker', passedClassName);
+  const className = clsx(theme.root, passedClassName);
   const monthLabel = getMonthLabel(monthWithDefault, locale);
 
   const onCellClick = onChange;
 
   return (
     <article className={className}>
-      <header className="ui-card-section">
+      <header>
         <Controls
+          theme={theme}
           label={monthLabel}
           onNext={handleNextMonth}
           onPrevious={handlePreviousMonth}
         />
       </header>
       <MonthView
-        {...{ locale, month: monthWithDefault, minDate, maxDate, selected, onCellClick }}
+        {...{ locale, theme, month: monthWithDefault, minDate, maxDate, selected, onCellClick }}
       />
     </article>
   );
@@ -67,6 +69,8 @@ const MonthCalendar = ({
 
 MonthCalendar.propTypes = {
   className: PropTypes.string,
+
+  theme: PropTypes.object,
 
   firstDay: PropTypes.number,
   weekdayShortLabels: PropTypes.arrayOf(PropTypes.string),
