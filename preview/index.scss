@@ -17,6 +17,10 @@ main {
 
 .preview-section {
   margin-top: 30px;
+
+  > ul > li {
+    margin-top: 15px;
+  }
 }
 
 .preview-fancy_image {
