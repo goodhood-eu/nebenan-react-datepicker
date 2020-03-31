@@ -14,20 +14,13 @@ import {
 
 
 const Controls = ({ label, onNext, onPrevious }) => {
-  const handlePrevious = () => {
-    if (onPrevious) return onPrevious();
-  };
-  const handleNext = () => {
-    if (onNext) return onNext();
-  };
-
   return (
     <div className="c-datepicker-controls">
-      <i onClick={handlePrevious} className='c-datepicker-controls-previous'>
+      <i onClick={onPrevious} className='c-datepicker-controls-previous'>
         ←
       </i>
       <span className="c-datepicker-controls-label">{label}</span>
-      <i onClick={handleNext} className="c-datepicker-controls-next">
+      <i onClick={onNext} className="c-datepicker-controls-next">
         →
       </i>
     </div>
