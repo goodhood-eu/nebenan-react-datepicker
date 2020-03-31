@@ -1,17 +1,19 @@
-.c-datepicker-cell.is-selected {
-  font-weight: bold;
-}
+.c-datepicker-cell {
+  &.is-selected {
+    font-weight: bold;
+  }
 
-.c-datepicker-cell.is-disabled {
-  color: #cfcfcf;
-}
+  &.is-disabled {
+    color: #cfcfcf;
+  }
 
-.c-datepicker-cell.is-interactive {
-  cursor: pointer;
-}
+  &.is-interactive {
+    cursor: pointer;
 
-.c-datepicker-cell.is-interactive:hover {
-  background: #c0c0c0;
+    &:hover {
+      background: #c0c0c0;
+    }
+  }
 }
 
 .c-datepicker-controls-previous,
