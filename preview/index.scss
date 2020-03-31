@@ -48,6 +48,14 @@ main {
   cursor: pointer;
 }
 
+.c-datepicker-controls-next:before {
+  content: "→";
+}
+
+.c-datepicker-controls-previous:before {
+  content: "←";
+}
+
 .c-datepicker-date {
   display: flex;
   justify-content: center;

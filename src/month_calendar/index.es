@@ -9,13 +9,9 @@ import MonthView from './month_view';
 
 const Controls = ({ theme, label, onNext, onPrevious }) => (
   <div className={theme.controls}>
-    <i onClick={onPrevious} className={theme.controlsPrevious}>
-      ←
-    </i>
+    <i onClick={onPrevious} className={theme.controlsPrevious} />
     <span className={theme.controlsLabel}>{label}</span>
-    <i onClick={onNext} className={theme.controlsNext}>
-      →
-    </i>
+    <i onClick={onNext} className={theme.controlsNext} />
   </div>
 );
 
