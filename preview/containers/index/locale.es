@@ -7,16 +7,16 @@ export default {
       match: {},
       options: {
         weekStartsOn: 1,
-        firstWeekContainsDate: 4
-      }
+        firstWeekContainsDate: 4,
+      },
     },
     calendar: {
       previousMonth: 'Vormonat',
       nextMonth: 'Nächster Monat',
       months: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
       weekdays: ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
-      weekdaysShort: ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa']
-    }
+      weekdaysShort: ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'],
+    },
   },
   name: 'de-DE',
   type: 'de',
@@ -30,7 +30,7 @@ export default {
       features_tab_feed: 'Startseite',
       features_tab_group: 'Gruppen',
       features_tab_marketplace: 'Marktplatz',
-      features_tab_post: 'Beiträge'
+      features_tab_post: 'Beiträge',
     },
     abuse_modal: {
       description_complete: '**Was passiert jetzt?**\n\nWir prüfen jetzt, ob ein Verstoß gegen die Nettiquette oder Nutzungsbedingungen vorliegt. Wenn das so ist, werden wir aktiv und klären das.',
@@ -46,7 +46,7 @@ export default {
       title_group: 'Du möchtest diese Gruppe melden?',
       title_guestbook: 'Du möchtest diese Empfehlung melden?',
       title_post: 'Du möchtest diesen Beitrag melden?',
-      title_profile: 'Du möchtest diese Person melden?'
+      title_profile: 'Du möchtest diese Person melden?',
     },
     account: {
       cancel_edit: 'Zum Nutzerkonto',
@@ -78,11 +78,11 @@ export default {
       info_phone_number_placeholder: 'Keine Angabe',
       info_title: 'Persönliche Daten',
       password_confirm_modal_text: 'Um Änderungen an deinen persönlichen Daten vorzunehmen, gib bitte dein aktuelles Passwort ein.',
-      password_confirm_modal_title: 'Passwort'
+      password_confirm_modal_title: 'Passwort',
     },
     address_fields: {
       tip_house: 'Nicht sichtbar',
-      tip_street: 'Nur in deiner eigenen Nachbarschaft sichtbar'
+      tip_street: 'Nur in deiner eigenen Nachbarschaft sichtbar',
     },
     already_authorized: {
       content: 'Klicke auf „Zur Startseite“, um zu deiner Nachbarschaft zu gelangen.\n\nFalls du den Computer gemeinsam mit anderen Personen nutzt, die ebenfalls bei %{site_name} registriert sind, kann es sein, dass diese Person aktuell eingeloggt ist. Klicke auf „Mit einem anderen Konto einloggen“, um dich in deine Nachbarschaft einzuloggen.',
@@ -90,7 +90,7 @@ export default {
       link_homepage: 'Zur Startseite',
       link_login: 'Mit einem anderen Konto einloggen',
       link_register: 'Mit einem anderen Konto registrieren',
-      title: 'Du bist bereits eingeloggt.'
+      title: 'Du bist bereits eingeloggt.',
     },
     application_banner: { label: 'Auch als App!' },
     banned_card: {
@@ -105,7 +105,7 @@ export default {
       text_temporarily_banned_organization: 'Leider hast du trotz vorangegangener Hinweise per E-Mail wiederholt Inhalte zu deiner Organisation über dein privates Profil bei %{site_name} veröffentlicht. Solche Inhalte dürfen nur über ein Organisationsprofil verbreitet werden. Aus diesem Grund wurde dein privates Nutzerkonto vorübergehend deaktiviert:\n\n**Bis**: %{end_date}\n\nEine Plattform wie %{site_name} kann nur erfolgreich bestehen, wenn gleiche Regeln für alle gelten und Inhalte, die nicht von Privatpersonen stammen, auch als solche gekennzeichnet werden.\n\n## Was kannst du jetzt tun?\n\nWir glauben daran, dass gemeinnützige Organisationen einen entscheidenden Beitrag zu einer lebendigen Nachbarschaft leisten. Erstelle deshalb jetzt ein Organisationsprofil auf [%{organizations_url}](%{magic_url}). Du hast bereits ein Organisationsprofil erstellt oder versehentlich mit deinem privaten Profil Inhalte veröffentlicht? Schreib uns, sodass wir dein Nutzerkonto wieder aktivieren können: [Kontakt](%{support_url})',
       title_not_banned: 'Dein Nutzerkonto wurde wieder freigeschaltet',
       title_permanently_banned: 'Es tut uns Leid!',
-      title_temporarily_banned: 'Dein Nutzerkonto ist vorübergehend deaktiviert'
+      title_temporarily_banned: 'Dein Nutzerkonto ist vorübergehend deaktiviert',
     },
     ben_modal: {
       events_content: 'Sorge für Begegnungen im echten Leben. Jede Zusage von Nachbarn zu deinen Veranstaltungen zählt.',
@@ -116,40 +116,40 @@ export default {
       likes_content: 'Unterstütze deine Nachbarn mit wertvollen Tipps, Ideen und Empfehlung und erhalte so zahlreiche Danke-Reaktionen.',
       likes_title: 'Danke an dich',
       text: 'Besonders engagierte Nachbarn setzen sich für ihre Nachbarschaft ein und erhalten dafür Zuspruch. So wirst auch du zu einem besonders engagierten Nachbarn:',
-      title: 'Engagierte Nachbarn'
+      title: 'Engagierte Nachbarn',
     },
     bookmarks: {
       empty_text: 'Deine Merkliste ist noch leer. Hast du einen spannenden Beitrag entdeckt? Dann merke ihn dir, indem du auf das Lesezeichen-Symbol klickst.',
-      title: 'Merkliste'
+      title: 'Merkliste',
     },
     business_preview_card: {
       link_your_businesses: 'Jetzt registrieren',
-      title_your_businesses: 'Dein Gewerbe bei nebenan.de'
+      title_your_businesses: 'Dein Gewerbe bei nebenan.de',
     },
     calendar: {
       next_month: 'Nächster Monat',
-      previous_month: 'Vormonat'
+      previous_month: 'Vormonat',
     },
     catalog: {
       breadcrumbs_index: 'Alle Bundesländer',
       empty_catalog: 'Dieses Gebiet wird nicht unterstützt.',
       title_hoods: 'Nachbarschaften in %{title}:',
-      title_states: 'Wähle dein Bundesland:'
+      title_states: 'Wähle dein Bundesland:',
     },
     christmas_modal: {
       content: 'Zeig es mit deinem Profilfoto und setze dir unsere Weihnachtsmütze auf! Lass uns so etwas weihnachtliche Atmosphäre in die Nachbarschaft bringen. Die Mütze verschwindet automatisch wieder zum Jahreswechsel. Bist du dabei?',
       label_close: 'Nein danke',
       label_confirm: 'Ja, Mütze aufsetzen',
-      title: 'Schon in Weihnachtsstimmung?'
+      title: 'Schon in Weihnachtsstimmung?',
     },
     cities_preview: {
       browse: 'Alle Städte',
-      title: 'Städte auf %{site_name}:'
+      title: 'Städte auf %{site_name}:',
     },
     city: { description_hood_search: 'Ist dein Ort nicht dabei? Gib hier deine Postleizahl ein!' },
     city_details: {
       link_more: 'Mehr Info',
-      title_feed: 'Öffentliche Beiträge aus %{title}:'
+      title_feed: 'Öffentliche Beiträge aus %{title}:',
     },
     comment: {
       confirm_delete_content: 'Bist du dir sicher, dass du deine Antwort löschen möchtest?',
@@ -159,7 +159,7 @@ export default {
       edit: 'Antwort bearbeiten',
       from_you: 'von dir',
       number_neighbors: '%{count} Nachbarn',
-      show_all_replies: 'Alle %{count} Antworten anzeigen'
+      show_all_replies: 'Alle %{count} Antworten anzeigen',
     },
     common: {
       add_bookmark: 'Merken',
@@ -182,11 +182,11 @@ export default {
       show_details: 'Details anzeigen',
       to_home: 'Zur Startseite',
       to_profile: 'Zum Profil',
-      unblock: 'Wieder einblenden'
+      unblock: 'Wieder einblenden',
     },
     content_creator: {
       clickbait: 'Was möchtest du mitteilen?',
-      clickbait_event: 'Veranstaltung erstellen'
+      clickbait_event: 'Veranstaltung erstellen',
     },
     content_creator_form: {
       title_category_1: 'Mitteilung',
@@ -194,24 +194,24 @@ export default {
       title_category_3: 'Angebot',
       title_category_4: 'Empfehlung',
       title_default: 'Wähle eine Option:',
-      title_event: 'Veranstaltung'
+      title_event: 'Veranstaltung',
     },
     content_creator_selector: {
       label_category_1: 'Mitteilung',
       label_category_2: 'Suche',
       label_category_3: 'Angebot',
       label_category_4: 'Empfehlung',
-      label_category_5: 'Veranstaltung'
+      label_category_5: 'Veranstaltung',
     },
     conversations: {
       description_list_end: 'Du kannst deinen Nachbarn persönliche Nachrichten schicken. Diese Nachrichten können nur von dir und dem Empfänger gelesen werden.',
       description_list_end_link: 'Empfänger auswählen',
       header: 'Postfach',
-      search_for_neighbor: 'Nachbarn suchen'
+      search_for_neighbor: 'Nachbarn suchen',
     },
     cookies_banner: {
       close: 'Ok',
-      text: 'Bitte beachte, dass wir Cookies verwenden und du durch die Nutzung unserer Webseite unseren [Cookie-Richtlinien](/privacy) zustimmst.'
+      text: 'Bitte beachte, dass wir Cookies verwenden und du durch die Nutzung unserer Webseite unseren [Cookie-Richtlinien](/privacy) zustimmst.',
     },
     corona: {
       categories_radio: {
@@ -225,23 +225,23 @@ export default {
         description_filler_2: 'Durch diese Angabe können wir leichter jemanden finden, der helfen kann.',
         title: 'Wobei braucht du Hilfe?',
         title_filler_1: 'Wobei braucht du Hilfe?',
-        title_filler_2: 'Wobei wird Hilfe benötigt?'
+        title_filler_2: 'Wobei wird Hilfe benötigt?',
       },
       description: {
         label_zip: 'Aktuelle Hilfe-Gesuche in deinem PLZ-Gebiet:',
-        title: 'Du möchtest helfen?'
+        title: 'Du möchtest helfen?',
       },
       empty_list_message: '## In deiner Nähe gibt es noch keine Hilfe-Gesuche.\n\nHilf uns, diese Seite bekannter zu machen! [Hier findest du Material dafür.](https://magazin.nebenan.de/assets/downloads/coronahilfe-von-nebenan.zip)',
       footnotes: {
         content: 'Wer ein Gesuch aufgeben möchte, hinterlässt über die Hotline, das Formular oder unsere Partnerseite [gemeinschaft.online](https://gemeinschaft.online) seine **Telefonnummer, PLZ** und die Kategorie der Hilfeleistung. \n\nDiese Informationen werden ins **geschützte Netzwerk von nebenan.de** nach PLZ sortiert eingespielt. **Nur adressverifizierte Nachbarn** sehen die Gesuche. Wer helfen kann, erhält eine **E-Mail mit der Telefonnummer der suchenden Person** und kann direkt Kontakt aufnehmen.\n\nDer automatisierte Prozess wurde mit der Datenschutzbeauftragen von nebenan.de bei [ISICO](https://www.isico-datenschutz.de/) abgestimmt. Mehr zum Thema Datenschutz findest du [hier](https://hilfe.nebenan.de/hc/de/articles/214082669-Wie-steht-es-bei-nebenan-de-um-den-Datenschutz-)',
-        title: 'Welche Daten werden verarbeitet?'
+        title: 'Welche Daten werden verarbeitet?',
       },
       form: {
         alternative_button: 'Hinweis zum Datenschutz',
         button_submit: 'Unterstützung anfragen',
         modal_privacy_content: '**Hinweis zum Datenschutz**\n\nUnter nebenan.de/corona kannst du ein Hilfe-Gesuch für dich oder eine andere Person, z.B. Angehörige, aufgeben. Die Daten, die du eingibst, werden **ausschließlich** dafür verwendet, dein Hilfe-Gesuch bei nebenan.de in deinem PLZ-Gebiet zu veröffentlichen.\n\nMit dem Klick auf "Unterstützung anfragen" wird dein HIlfe-Gesuch in unserer Datenbank gespeichert. Dazu gehören die Pflichtangaben Telefonnummer, PLZ und Kategorie des Hilfe-Gesuchs; optional sind Namen und E-Mail-Adresse. Weitere personenbezogenen Daten werden nicht gespeichert. \n\nDein Gesuch wird dann im geschützten Nachbarschaftsnetzwerk nebenan.de nach PLZ sortiert veröffentlicht: Es wird dort ausschließlich Personen angezeigt, die bei nebenan.de registriert und verifiziert sind. Das bedeutet, dass nur Menschen dein Gesuch sehen können, die nachweislich im gleichen PLZ-Gebiet leben wie du und bei nebenan.de unter ihrem echten Namen auftreten. \n\nWenn ein nebenan.de-Mitglied dein Gesuch sieht und helfen möchte, kann es auf "Jetzt helfen" klicken und erhält eine E-Mail mit deinen Angaben. In der E-Mail wird die Person aufgefordert, telefonisch Kontakt mit dir aufzunehmen. \n\nDu kannst pro Gesuch maximal von 5 Personen kontaktiert werden.\n\n**Wir bitten dich, verantwortlich mit diesem Angebot umzugehen und nur echte Hilfe-Gesuche aufzugeben.** Werden offensichtlich falsche Hilfe-Gesuche oder gleiche Gesuche vielfach aufgeben, werden wir diese löschen. Wer falsche Gesuche aufgibt, wird von uns von der weiteren Nutzung des Angebots ausgeschlossen.\n\nHilfe-Gesuche werden **ausschließlich** zu Zwecken der Nachbarschaftshilfe in der Datenbank bei nebenan.de gespeichert. Eine Weitergabe an Dritte außer für den Zweck der Vermittlung von Hilfe ist ausgeschlossen.\n\nDein Hilfe-Gesuch wird so lange gespeichert, wie die Corona-Krise anhält und der Hilfsbedarf besteht. Wir werden über unsere Website über die Schließung der Seite nebenan.de/corona und die damit verbundene Löschung der Hilfe-Gesuche und der personenbezogenen Daten informieren.\n\n\n\nDarüber hinaus gilt die [Datenschutzerklärung von nebenan.de](https://nebenan.de/privacy)',
         modal_privacy_title: 'Hinweis zum Datenschutz',
-        title: 'Hilfe-Gesuch aufgeben:'
+        title: 'Hilfe-Gesuch aufgeben:',
       },
       form_inputs: {
         description: 'Fülle das Formular aus, damit wir dein Hilfe-Gesuch an Personen aus deiner Nähe weiterleiten können.',
@@ -261,7 +261,7 @@ export default {
         placeholder_zip_code_filler_2: 'Postleitzahl der Person',
         title: 'Deine Kontaktdaten',
         title_filler_1: 'Deine Kontaktdaten',
-        title_filler_2: 'Kontaktdaten der **hilfesuchenden Person**'
+        title_filler_2: 'Kontaktdaten der **hilfesuchenden Person**',
       },
       header: {
         banner_text: 'Alternativ: 07172 93 400 48',
@@ -274,7 +274,7 @@ export default {
         success_cta_button: 'Weiteres Gesuch erstellen',
         success_text: 'Dein Gesuch wird jetzt an verifizierte Nachbarn bei nebenan.de weitergeleitet, die im gleichen PLZ-Gebiet wohnen wie du. Wenn sie helfen können, nehmen sie telefonisch Kontakt zu dir auf. Wie schnell sich jemand bei dir meldet, können wir leider nicht beeinflussen. Alles Gute! ',
         success_title: 'Dein Hilfe-Gesuch wurde erstellt!',
-        title: 'Coronahilfe von nebenan'
+        title: 'Coronahilfe von nebenan',
       },
       help_request_details: { label_zip: 'PLZ: %{zip_code}' },
       list_card: {
@@ -284,13 +284,13 @@ export default {
         label_applicants: 'Wird geholfen von:',
         link_cancel: 'Kann doch nicht',
         modal_success_content: '## Wir haben dir eine E-Mail geschickt.\n\nDarin findest du Informationen, wie du die hilfesuchende Person kontaktieren kannst. Melde dich am besten direkt bei ihr und besprecht, wie genau du sie unterstützen kannst.',
-        modal_success_title: 'Toll, dass du hilfst!'
+        modal_success_title: 'Toll, dass du hilfst!',
       },
       modal_revoke: {
         button_confirm: 'Ich kann nicht helfen',
         content: 'Bestätige, dass du doch nicht helfen kannst. Dann wird das Gesuch wieder als "offen" markiert.',
         link_close: 'Zurück',
-        title: 'Hilfe wirklich zurückziehen?'
+        title: 'Hilfe wirklich zurückziehen?',
       },
       owner_inputs: {
         description: 'Deine Angaben werden nicht veröffentlicht. Wir erheben sie vorsichtshalber, um klar zuordnen zu können, wer das Hilfe-Gesuch erstellt hat.',
@@ -298,40 +298,40 @@ export default {
         label_checkbox: 'Bitte bestätige, dass du das Gesuch im Auftrag der hilfesuchenden Person erstellst.',
         placeholder_email: 'Deine E-Mail-Adresse',
         placeholder_name: 'Deine Name',
-        title: 'Deine Angaben:'
+        title: 'Deine Angaben:',
       },
       owner_radio: {
         description: 'Für wen möchtest du Unterstützung anfragen?',
         option_1: 'Für mich selbst',
-        option_2: 'Für jemand anderen'
+        option_2: 'Für jemand anderen',
       },
       registration_cta: {
         link_register: 'Unterstützung anbieten',
         subtitle: 'Registriere dich in deiner Nachbarschaft',
-        title: 'Du möchtest helfen?'
+        title: 'Du möchtest helfen?',
       },
       slides: {
         slide_0: '## Du oder deine Angehörigen brauchen Unterstützung? \n1. Gib über die Hotline oder das Formular ein Hilfe-Gesuch auf.\n2. Hinterlasse deine  __PLZ und deine Telefonnummer.__\n3. Dein Gesuch erscheint __ausschließlich verifizierten Nachbarn bei nebenan.de,__ die im gleichen PLZ-Gebiet wohnen. Sie können direkt Kontakt zu dir aufnehmen.',
         slide_1: '## Du willst helfen?\n1. Registriere und verfiziere dich bei nebenan.de. Wenn du schon ein Nutzerkonto hast, logge dich ein. \n2. Sieh dir __die aktuellen Hilfe-Gesuche__ aus deinem PLZ-Gebiet an und schau, wem du helfen kannst.\n3. Klicke auf __"Jetzt helfen"__ , erhalte die Telefonnummer des Suchenden und nimm direkt Kontakt auf.',
-        slide_2: '## Warum gibt es diese Aktion?\nÜber nebenan.de __vernetzten und helfen__ sich Nachbarn bereits erfolgreich online.\n\nJetzt gilt es __Menschen zu erreichen,__ die keinen Internetanschluss haben oder Hilfe für Angehörige organisieren möchten, die in einer anderen Stadt leben.\n\nUm __Hilfe von vertrauenswürdigen, nachweislich in der Nachbarschaft lebenden Menschen__ zu ermöglichen, starten wir mit vielen Partnern diese Aktion und bündeln alle Hilfe-Gesuche auf dieser Seite.'
-      }
+        slide_2: '## Warum gibt es diese Aktion?\nÜber nebenan.de __vernetzten und helfen__ sich Nachbarn bereits erfolgreich online.\n\nJetzt gilt es __Menschen zu erreichen,__ die keinen Internetanschluss haben oder Hilfe für Angehörige organisieren möchten, die in einer anderen Stadt leben.\n\nUm __Hilfe von vertrauenswürdigen, nachweislich in der Nachbarschaft lebenden Menschen__ zu ermöglichen, starten wir mit vielen Partnern diese Aktion und bündeln alle Hilfe-Gesuche auf dieser Seite.',
+      },
     },
     corona_banner: {
       link: 'Ich kann helfen',
-      text: '**Coronahilfe:** Diese Menschen aus deiner Nähe brauchen Unterstützung'
+      text: '**Coronahilfe:** Diese Menschen aus deiner Nähe brauchen Unterstützung',
     },
     donations: {
       amount_fields: {
         error_amount_monthly: 'Der Mindestbetrag bei monatlicher Zahlung beträgt 1,- EUR. Bitte nur ganze Zahlen eingeben.',
         error_amount_yearly: 'Der Mindestbetrag bei jährlicher Zahlung beträgt 12,- EUR. Bitte nur ganze Zahlen eingeben.',
-        option_label_currency: 'EURO'
+        option_label_currency: 'EURO',
       },
       amount_text: {
         description_amount_custom: '…so viel wie du geben kannst und willst. Lege deinen ganz persönlichen Betrag fest.',
         description_amount_empty: '…so viel wie du geben kannst und willst. Lege deinen ganz persönlichen Betrag fest.',
         text_amount: '%{amount} Euro',
         text_charge_rate_monthly: 'pro Monat ist… |||| pro Monat sind…',
-        text_charge_rate_yearly: 'pro Jahr ist… |||| pro Jahr sind…'
+        text_charge_rate_yearly: 'pro Jahr ist… |||| pro Jahr sind…',
       },
       bank_details_modal: {
         content: 'Gerne kannst du auch direkt per Überweisung Förderer werden! Wir freuen uns sowohl über Daueraufträge als auch einmalige Beiträge. Bitte gib deinen vollständigen Namen und deine Postleitzahl als Verwendungszweck an, damit wir wissen von wem der Förderbeitrag kommt.\n\n**Von Herzen Danke dafür!**',
@@ -339,7 +339,7 @@ export default {
         label_bic: 'BIC:',
         label_iban: 'IBAN:',
         label_owner: 'Name:',
-        title: 'Unsere Kontoverbindung '
+        title: 'Unsere Kontoverbindung ',
       },
       button_donate: 'Jetzt Förderer werden',
       description_donations: 'Stärke deine Nachbarschaft und werde jetzt ab 1 Euro monatlich Förderer von %{site_name}.',
@@ -349,7 +349,7 @@ export default {
         link_alternative_payment: 'Kontoverbindung',
         text_success: 'Ab jetzt bist du Förderer von %{site_name}. Von Herzen danke dafür! Du wirst nun als Förderer mit einem kleinen Zeichen an deinem Namen in deiner Nachbarschaft zu sehen sein. Wenn du das nicht wünschst, schiebe den Regler einfach auf "Nein".',
         title_default: 'Jetzt Förderer werden',
-        title_success: 'Danke %{firstname}'
+        title_success: 'Danke %{firstname}',
       },
       donations_manage: {
         button_to_hood: 'Zur Nachbarschaft',
@@ -364,12 +364,12 @@ export default {
         text_billing_plan_yearly: 'jahrlich',
         text_ended: 'Nachbarschaft ist eine Gemeinschaft, in die sich alle einbringen können. Ganz gleich, ob mit einem Förderbeitrag oder Aktivitäten und Hilfe in der eigenen Nachbarschaft. Beides stärkt das nachbarschaftliche Miteinander.',
         title: 'Dein Förderbeitrag',
-        title_ended: 'Danke, dass du die gute Nachbarschaft gefördert hast!'
+        title_ended: 'Danke, dass du die gute Nachbarschaft gefördert hast!',
       },
       frequency_selector: {
         option_monthly: 'Monatlich',
         option_yearly: 'Jährlich',
-        title: 'Wähle dein Zahlungsintervall:'
+        title: 'Wähle dein Zahlungsintervall:',
       },
       link_back: 'Zu deiner Nachbarschaft',
       link_manage: 'Förderung verwalten',
@@ -385,33 +385,33 @@ export default {
         modal_title: 'Was ist die Prüfziffer?',
         option_bank_account: 'Bankeinzug',
         option_card: 'Kreditkarte',
-        option_default: 'Zahlungsart auswählen'
+        option_default: 'Zahlungsart auswählen',
       },
       payment_form: {
         button_pay: 'Jetzt bezahlen',
         button_pay_amount: 'Jetzt %{amount}€ bezahlen',
         link_terms: 'Es gelten die Zahlungsbedingungen für Förderer.',
         modal_title: 'Zahlungsbedingungen',
-        text_network_error: 'Wir konnten das Zahlungsformular nicht laden. Bitte versuche es erneut.'
+        text_network_error: 'Wir konnten das Zahlungsformular nicht laden. Bitte versuche es erneut.',
       },
       profile_status_toggle: { label: 'Als Förderer sichtbar sein' },
       progress_modal_title: 'Deine Angaben werden übermittelt…',
       terms_checkbox: {
         error_required: 'Bitte bestätige die Zahlungsbedingungen.',
-        label: 'Ja, ich möchte Förderer werden und unterstütze die Good Hood GmbH mit dem oben ausgewählten Betrag. Die Förderung kann ich jederzeit kündigen.'
+        label: 'Ja, ich möchte Förderer werden und unterstütze die Good Hood GmbH mit dem oben ausgewählten Betrag. Die Förderung kann ich jederzeit kündigen.',
       },
       text_supporter: 'Nachbarschaften, in denen sich die Anwohner kennen, sind hilfsbereiter, gesünder und nachhaltiger. Kurz: Sie erleichtern deinen Alltag und bieten einen positiven Einfluss auf deine Lebensqualität.',
       title_carousel: 'Was wir allen Nachbarn bieten:',
       title_default: 'Zusammen lebendige Nachbarschaft fördern!',
-      title_supporter: 'Du bist Förderer der Nachbarschaft!'
+      title_supporter: 'Du bist Förderer der Nachbarschaft!',
     },
     donations_banner: {
       link: 'Jetzt Förderer werden!',
-      text: 'Möchtest du deine Nachbarschaft fördern?'
+      text: 'Möchtest du deine Nachbarschaft fördern?',
     },
     dropzone: {
       label_drag: 'Bild hier reinziehen.',
-      label_release: 'Bild jetzt loslassen.'
+      label_release: 'Bild jetzt loslassen.',
     },
     editable_surroundings: { label_neighborhoods_count: '%{activeCount} von %{smart_count} Nachbarschaft |||| %{activeCount} von %{smart_count} Nachbarschaften' },
     editable_surroundings_modal: { title: 'Für diese Filter-Option bitte Nachbarschaften in deiner Umgebung aktivieren' },
@@ -427,20 +427,20 @@ export default {
       success_title: 'Wunderbar!',
       token_invalid_info: 'Erfahre hier, wann Bestätigungs-Links ihre Gültigkeit verlieren und was du tun kannst.',
       token_invalid_text: 'Der Link in deiner Bestätigungsmail zur Änderung deiner E-Mail-Adresse ist nicht mehr gültig.',
-      token_invalid_title: 'Ups!'
+      token_invalid_title: 'Ups!',
     },
     embeddable_textarea: { tooltip_poi: 'Ort empfehlen' },
     embedded_content_gone: { text: 'Dieser Inhalt wurde gelöscht' },
     embedded_poi_aggregator: {
       link_more: '%{smart_count} weitere Empfehlungen anzeigen',
       modal_title: 'Nachbarn empfehlen:',
-      title: 'Nachbarn empfehlen:'
+      title: 'Nachbarn empfehlen:',
     },
     embed_poi_wizard: { link: 'Ort empfehlen' },
     embed_poi_wizard_modal: {
       content: 'Du hast diesen Ort ausgewählt. Möchtest du einen Kommentar hinzufügen?',
       placeholder_body: 'Schreibe einen Kommentar',
-      title: 'Empfehle diesen Ort'
+      title: 'Empfehle diesen Ort',
     },
     emoji_cloud: { text_empty: 'Zuletzt benutzte Emojis erscheinen hier' },
     error: {
@@ -525,35 +525,35 @@ export default {
       wrong_dates_pair: 'Der Veranstaltungsbeginn muss vor dem Veranstaltungsende liegen.',
       wrong_format: 'Falsches Format.',
       wrong_hood_not_close_by: 'Dein Zugangscode ist hier leider nicht gültig.',
-      wrong_length: 'Das passt hier nicht.'
+      wrong_length: 'Das passt hier nicht.',
     },
     error_404: {
       text: 'Ups, diese Seite gibt es nicht. Bitte ruf eine andere Seite auf.',
-      title: 'Error 404'
+      title: 'Error 404',
     },
     error_410: {
       text: 'Dieser Beitrag wurde gelöscht.',
-      title: 'Tut uns Leid! Dieser Inhalt existiert nicht mehr.'
+      title: 'Tut uns Leid! Dieser Inhalt existiert nicht mehr.',
     },
     error_500: {
       action: 'Neu laden',
       reset: 'Reset',
       text: 'Ups! Es ist etwas schief gelaufen. Versuch‘s gleich noch einmal und lade die Seite neu.',
-      title: 'Error 500'
+      title: 'Error 500',
     },
     error_boundary: {
       link_reload: 'Neuladen?',
-      text: 'Ooops, hier ist ein Fehler aufgetreten. Wir sind informiert und werden uns darum kümmern.'
+      text: 'Ooops, hier ist ein Fehler aufgetreten. Wir sind informiert und werden uns darum kümmern.',
     },
     event_calendar: {
       label_more: '…%{count} mehr',
-      title: 'Veranstaltungskalender'
+      title: 'Veranstaltungskalender',
     },
     event_wizard_form: {
       placeholder_body: 'Deine Veranstaltungsbeschreibung',
       placeholder_location: 'Ort der Veranstaltung',
       placeholder_subject: 'Name der Veranstaltung',
-      text_autocomplete_header: 'Verwende einfach "**%{value}**"'
+      text_autocomplete_header: 'Verwende einfach "**%{value}**"',
     },
     event_wizard_times_form: {
       add_end_time: 'Ende der Veranstaltung angeben',
@@ -565,14 +565,14 @@ export default {
       placeholder_until: 'bis Tag',
       remove_end_time: 'Ende der Veranstaltung löschen',
       title_default: 'Veranstaltungstermin',
-      title_poll: 'Optionen für die Terminumfrage'
+      title_poll: 'Optionen für die Terminumfrage',
     },
     event_wizard_times_options: { title: 'Termin Festlegen' },
     facebook: {
       description: 'Anmelde-Daten werden von Facebook abgefragt',
       error_description: 'Leider konnten wir deine Daten nicht von Facebook abrufen. Am besten versuchst du es erneut auf unserer [Anmeldeseite](/login).',
       error_title: 'Ein Fehler ist aufgetreten',
-      title: 'Bitte warten…'
+      title: 'Bitte warten…',
     },
     feed: {
       button_contact_neighbor: 'Nachricht senden',
@@ -595,7 +595,7 @@ export default {
       feed_event: {
         button_participation_pm_modal: 'Persönliche Nachricht',
         content_participation_pm_modal: 'Schreibe eine Nachricht an %{name} oder nutze einfach die Kommentarfunktion unter der Veranstaltung.',
-        title_participation_pm_modal: 'Fragen zur Veranstaltung?'
+        title_participation_pm_modal: 'Fragen zur Veranstaltung?',
       },
       feed_item_options: {
         label_mute_author: '%{name} ausblenden',
@@ -605,7 +605,7 @@ export default {
         modal_confirm_mute_author_content: 'Beiträge von ausgeblendeten Personen werden dir nicht mehr angezeigt. Die ausgeblendete Person erfährt dabei nicht, dass du ihre Beiträge nicht sehen möchtest. Du kannst Ausblendungen jederzeit wieder aufheben oder erneut aktivieren.',
         modal_confirm_mute_author_title: 'Möchtest du diesen Nachbarn ausblenden?',
         modal_confirm_mute_post_content: 'Du kannst die ausgeblendeten Inhalte in deinen Einstellungen jederzeit wieder einblenden.',
-        modal_confirm_mute_post_title: 'Möchtest du diesen Inhalt ausblenden?'
+        modal_confirm_mute_post_title: 'Möchtest du diesen Inhalt ausblenden?',
       },
       feed_preview: {
         dropdown_text_businesses: 'In dieser Darstellung zeigen wir dir die aktuellen Beiträge lokaler Gewerbetreibender aus deiner Nachbarschaft. So können lokale Gewerbe bei nebenan.de auf ihr Angebot aufmerksam machen. ',
@@ -613,7 +613,7 @@ export default {
         header_title_businesses: 'Gewerbliche Beiträge',
         header_title_marketplace: 'Marktplatz',
         link_to_businesses: 'Zu allen Gewerbebeiträgen',
-        link_to_marketplace: 'Zum Marktplatz'
+        link_to_marketplace: 'Zum Marktplatz',
       },
       from_hood: 'aus %{hood_title}',
       from_your_house: 'aus deinem Haus',
@@ -641,7 +641,7 @@ export default {
       title_poll_options: 'Wann kannst du?',
       title_voters_modal: 'Nachbarn, die abgestimmt haben.',
       tooltip_most_voted_date: 'Datum mit den meisten Stimmen',
-      welcome_neighbors_title: 'Wir begrüßen %{smart_count} neuen Nachbarn |||| Wir begrüßen %{smart_count} neue Nachbarn'
+      welcome_neighbors_title: 'Wir begrüßen %{smart_count} neuen Nachbarn |||| Wir begrüßen %{smart_count} neue Nachbarn',
     },
     feed_filter: {
       button: 'Filter anwenden',
@@ -663,14 +663,14 @@ export default {
       status_active: 'Gefilterte Inhalte',
       status_inactive: 'Alle Inhalte',
       title_categories: 'Art der Beiträge',
-      title_scope: 'Sichtbarkeit der Beiträge'
+      title_scope: 'Sichtbarkeit der Beiträge',
     },
     feed_item_business_dropdown: { description: 'Dieser Beitrag ist von einem lokalen Gewerbe aus deiner Nachbarschaft.' },
     feed_item_form: {
       title_convert_poll: 'Termin verbindlich festlegen',
       title_edit_event: 'Veranstaltung bearbeiten',
       title_edit_poll: 'Veranstaltungsumfrage bearbeiten',
-      title_edit_post: 'Beitrag bearbeiten'
+      title_edit_post: 'Beitrag bearbeiten',
     },
     feed_item_group_dropdown: { description: 'Dieser Beitrag ist nur sichtbar in der Gruppe:' },
     feed_item_header: {
@@ -702,14 +702,14 @@ export default {
       title_sub_category_44: 'Empfehlung geben',
       title_sub_category_45: 'Empfehlung suchen',
       title_type_13: 'Terminumfrage',
-      title_type_2: 'Veranstaltung'
+      title_type_2: 'Veranstaltung',
     },
     feed_item_hoods_modal: {
       foreign_hoods_label: 'Entfernte Nachbarschaften:',
       hoods_label: 'Angrenzende Nachbarschaften:',
       text_female: 'Hier kannst du sehen, für welche Nachbarschaften %{firstname} ihren Eintrag freigegeben hat. Die Sichtbarkeit von Einträgen anderer Nachbarn ist unabhängig von deinen Einstellungen zur [Umgebung](/profile/settings/hoods).',
       text_male: 'Hier kannst du sehen, für welche Nachbarschaften %{firstname} seinen Eintrag freigegeben hat. Die Sichtbarkeit von Einträgen anderer Nachbarn ist unabhängig von deinen Einstellungen zur [Umgebung](/profile/settings/hoods).',
-      title: 'Nachbarschaften, in denen der Eintrag sichtbar ist:'
+      title: 'Nachbarschaften, in denen der Eintrag sichtbar ist:',
     },
     feed_item_house_dropdown: { description: 'Dieser Beitrag ist nur für [Nachbarn](/neighbors?filter=limit_my_house_group) aus deinem Haus sichtbar.' },
     feed_item_info_dropdown: {
@@ -722,14 +722,14 @@ export default {
       label_visibility: 'Sichtbarkeit:',
       link_more: 'Mehr zu öffentlichen Beiträgen',
       text_status_active: 'aktiv',
-      text_status_closed: 'von [%{firstname}](/profile/%{id}) geschlossen'
+      text_status_closed: 'von [%{firstname}](/profile/%{id}) geschlossen',
     },
     feed_item_organization_dropdown: { description: 'Dieser Beitrag ist von einer Organisation in deiner Nachbarschaft' },
     feed_item_visibility: {
       visibility_group: 'in Gruppe %{title}',
       visibility_hood: 'sichtbar in %{name}',
       visibility_house: 'sichtbar nur in deinem Haus',
-      visibility_surrounding_hoods: '& Umgebung'
+      visibility_surrounding_hoods: '& Umgebung',
     },
     feed_item_welcome: { title: 'Wir begrüßen einen neuen lokalen Partner' },
     fill_profile: {
@@ -741,7 +741,7 @@ export default {
       interests_hint: '**Warum wir danach fragen:** _Durch die Angabe deiner Interessen ist es viel einfacher, Nachbarn mit Begeisterung für ähnliche Themen zu finden._',
       interests_title: 'Deine Interessen',
       skills_hint: '**Warum wir danach fragen:** _Durch die Angaben, wie du deiner Nachbarschaft gerne behilflich bist, kannst du ganz unkompliziert Nachbarn mit ergänzenden Hilfegesuchen und Angeboten finden._',
-      skills_title: 'Für deine Nachbarschaft'
+      skills_title: 'Für deine Nachbarschaft',
     },
     flea_markets: {
       benefits_item_easy_text: 'Am einfachsten geht es, wenn du bereits bei %{site_name} registriert bist.',
@@ -803,11 +803,11 @@ export default {
       registration_modal_title: 'Mach mit und melde jetzt kostenlos deinen Stand an. Gib einfach die folgenden Informationen an:',
       stage_kickerline: 'Diese Webseite wird gerade aktualisiert. Ab Mitte April findest du hier alles für die Hofflohmarkt-Saison 2019.',
       stage_title: '%{site_name} Hofflohmärkte',
-      subscribe_modal_title: 'Gib hier deine E-Mail ein:'
+      subscribe_modal_title: 'Gib hier deine E-Mail ein:',
     },
     flyer: {
       success_modal_text: 'Wir haben dir gerade eine E-Mail mit weiteren Informationen zur Verteilung geschickt. In der E-Mail findest du auch deinen direkten Ansprechpartner für Fragen rund um die Verteilung.',
-      success_modal_title: 'Super, du lädst ein!'
+      success_modal_title: 'Super, du lädst ein!',
     },
     flyer_distribution: {
       aggreement_accept: 'Ja zur starthilfe!',
@@ -827,7 +827,7 @@ export default {
       step_profit_text: 'Mit Hilfe deiner Einladung herrscht plötzlich Leben in deiner Nachbarschaft. Gemeinsamen Aktivitäten, einfachem Austausch und gegenseitiger Hilfe steht nun nichts mehr im Weg.',
       step_profit_title: 'Eine lebendige Nachbarschaft',
       text: 'Du möchtest Schwung in deine Nachbarschaft bringen und sie zügig auf über 100 Nachbarn wachsen lassen? Dann ist die Papier-Einladung der beste Weg!',
-      title: 'Mit einem "Ja" deine Nachbarschaft starten!'
+      title: 'Mit einem "Ja" deine Nachbarschaft starten!',
     },
     flyer_generator: {
       code_hint: '**HINWEIS:** _Kopiere den Code und füge ihn in deine Einladung ein. Der Zugangscode ist nur für deine Nachbarschaft gültig._',
@@ -840,17 +840,17 @@ export default {
       preview_title: 'So sieht deine Einladung aus:',
       revert_changes: 'Änderungen verwerfen',
       revert_confirm_text: 'Wenn du deine Textänderungen verwirfst, werden alle Änderungen unwiderruflich gelöscht und der Originalzustand des Einladungstextes wieder hergestellt.',
-      revert_confirm_title: 'Bist du sicher?'
+      revert_confirm_title: 'Bist du sicher?',
     },
     flyer_preview: {
       female_text: 'Liebe Nachbarn,\n\nwir möchten unsere Nachbarn besser kennenlernen und die Gemeinschaft untereinander stärken. Hierfür laden wir Sie in unsere Nachbarschaft auf %{site_name} ein!\n\nWohnen Sie hier und haben Lust mitzumachen?\n\nWir freuen uns auf Sie!\nIhre Nachbarin,\n\n%{firstname}, %{street}',
       male_text: 'Liebe Nachbarn,\n\nwir möchten unsere Nachbarn besser kennenlernen und die Gemeinschaft untereinander stärken. Hierfür laden wir Sie in unsere Nachbarschaft auf %{site_name} ein!\n\nWohnen Sie hier und haben Lust mitzumachen?\n\nWir freuen uns auf Sie!\nIhr Nachbar,\n\n%{firstname}, %{street}',
-      placeholder_code: 'code'
+      placeholder_code: 'code',
     },
     form: {
       error_server: 'Es ist ein Fehler aufgetreten. Bitte versuch es gleich nochmal.',
       navigation_confirm_content: 'Du hast deinen Inhalt noch nicht fertiggestellt. Möchtest du diese Seite verlassen, ohne ihn fertigzustellen? Der Inhalt wird dann nicht gespeichert.',
-      navigation_confirm_title: 'Seite verlassen?'
+      navigation_confirm_title: 'Seite verlassen?',
     },
     generic: {
       accept: 'Annehmen',
@@ -891,7 +891,7 @@ export default {
       view: 'Ansehen',
       welcome: 'Willkommen',
       yes: 'Ja',
-      you: 'Du'
+      you: 'Du',
     },
     groups: {
       create_group: 'Neue Gruppe erstellen',
@@ -918,7 +918,7 @@ export default {
       title_remove_member_modal: 'Sicher, dass du %{firstname} aus der Gruppe ausschließen möchtest?',
       title_remove_moderator_modal: 'Sicher, dass du %{firstname} den Moderatorstatus entziehen möchtest?',
       title_set_moderator_modal: 'Möchtest du %{firstname} zum Moderator machen?',
-      to_groups: 'Zur Gruppenübersicht'
+      to_groups: 'Zur Gruppenübersicht',
     },
     group_card: {
       collapse: 'Details ausblenden',
@@ -928,13 +928,13 @@ export default {
       label_join_private: 'Anfrage stellen',
       label_join_public: 'Gruppe beitreten',
       label_members: 'Mitglieder',
-      label_moderators: 'Moderatoren'
+      label_moderators: 'Moderatoren',
     },
     group_card_hoods_modal: {
       content: 'Hier siehst du, wo deine Gruppe sichtbar ist. Nachbarn aus diesem Gebiet können deiner Gruppe beitreten.',
       hint: '**HINWEIS**: _Erweiterungen können nach dem Speichern nicht rückgängig gemacht werden._',
       origin: 'Ursprung',
-      title: 'Gruppenreichweite'
+      title: 'Gruppenreichweite',
     },
     group_card_options: {
       confirm_delete_content: 'Wenn du die Gruppe löschst, werden alle Inhalte unwiderruflich gelöscht.',
@@ -949,7 +949,7 @@ export default {
       options_make_private: 'Gruppe umwandeln',
       options_manage_invites: 'Mitgliedsanfragen',
       options_manage_members: 'Mitglieder verwalten',
-      options_show_hoods: 'Gruppenreichweite'
+      options_show_hoods: 'Gruppenreichweite',
     },
     group_form: {
       description_toggle_private: 'Mitglieder müssen durch einen Moderator freigegeben werden. Beiträge in Gruppen können nur von Gruppenmitgliedern gesehen werden.',
@@ -961,7 +961,7 @@ export default {
       placeholder_description: 'Beschreibe deine Gruppe',
       placeholder_title: 'Name der Gruppe',
       privacy_hood: 'Nur für deine Nachbarschaft',
-      privacy_surrounding: 'Nachbarschaft mit Umgebung'
+      privacy_surrounding: 'Nachbarschaft mit Umgebung',
     },
     group_list_controls: {
       filter_default: 'Kein Filter',
@@ -970,18 +970,18 @@ export default {
       filter_public: 'Nur offene Gruppen',
       sort_activity: 'Nach Aktivität',
       sort_members: 'Nach Mitgliederanzahl',
-      sort_name: 'Nach Alphabet'
+      sort_name: 'Nach Alphabet',
     },
     group_member_info: {
       label_cancel_membership_request: 'Anfrage zurückziehen',
       label_member: 'Du bist Mitglied',
-      label_moderator: 'Du bist Moderator'
+      label_moderator: 'Du bist Moderator',
     },
     group_visibility_info: {
       private_group: 'Geschlossene Gruppe',
       public_group: 'Offene Gruppe',
       visible_in_hood: 'Sichtbar in %{title}',
-      visible_in_surroundings: '& Umgebung'
+      visible_in_surroundings: '& Umgebung',
     },
     guestbook: { title: 'Empfehlungen' },
     guestbook_creator: { text_placeholder: 'Empfehlung schreiben…' },
@@ -989,23 +989,23 @@ export default {
     guestbook_item: {
       delete: 'Eintrag löschen',
       edit: 'Eintrag bearbeiten',
-      edited_message: '(nachträglich bearbeitet)'
+      edited_message: '(nachträglich bearbeitet)',
     },
     guestbook_list: {
       deleted_message: 'Dieser Beitrag wurde gelöscht.',
       link_more: 'Mehr lesen',
-      text_empty: 'Dir gefällt dieser Ort? Dann empfiehl ihn jetzt deinen Nachbarn.'
+      text_empty: 'Dir gefällt dieser Ort? Dann empfiehl ihn jetzt deinen Nachbarn.',
     },
     guestbook_modal: {
       confirm: 'Empfehlung schreiben',
       description: 'Schreib doch noch ein paar Zeilen und verrate deinen Nachbarn, warum du diese Empfehlung gibst.\nDeine Empfehlung wird noch wertvoller für deine Nachbarn, wenn du ihnen in wenigen Sätzen beschreibst, warum dir dieser Ort oder dieser Service so gut gefällt.\nSo hilfst du deinen Nachbarn, die Umgebung zu entdecken.',
-      title: 'Danke für deine Empfehlung!'
+      title: 'Danke für deine Empfehlung!',
     },
     guestbook_teaser: {
       description: '[Logge dich ein](/login) oder [registriere](/register) dich um Empfehlungen deiner Nachbarn zu lesen oder selbst zu schreiben.',
       header: 'Empfehlungen',
       link_login: 'Einloggen',
-      link_register: 'Registrieren'
+      link_register: 'Registrieren',
     },
     header: {
       link_about_nebenan: 'Über %{site_name}',
@@ -1043,14 +1043,14 @@ export default {
       link_your_neighbors: 'Deine Nachbarn',
       link_your_privacy: 'Deine Privatsphäre',
       link_your_profile: 'Dein Profil',
-      link_your_settings: 'Deine Einstellungen'
+      link_your_settings: 'Deine Einstellungen',
     },
     hood_details: {
       details_hoods_title: 'Nachbarschaften in der Umgebung von %{title}:',
       details_label_activity_count: 'Aktivitäten:',
       details_label_neighbors_count: 'Direkte Nachbarn:',
       details_label_started_at: 'Aktiv seit:',
-      details_label_surrounding_hoods_neighbors_count: 'Nachbarn in der Umgebung:'
+      details_label_surrounding_hoods_neighbors_count: 'Nachbarn in der Umgebung:',
     },
     hood_info_markers: { look_at: 'Anschauen' },
     hood_landing: {
@@ -1060,16 +1060,16 @@ export default {
       header_intro: 'Entdecke deine Nachbarschaft',
       link_more: 'Mehr Info',
       neighbors_count: 'Nachbarn: %{smart_count}',
-      title_feed: 'Öffentliche Beiträge aus %{title}:'
+      title_feed: 'Öffentliche Beiträge aus %{title}:',
     },
     hood_searchbox: {
       error: 'Bitte gib deine Postleitzahl ein.',
-      placeholder: 'Gib hier deine Postleitzahl ein…'
+      placeholder: 'Gib hier deine Postleitzahl ein…',
     },
     hood_search_card: { title: 'Finde deine Nachbarschaft:' },
     hood_tags: {
       tags_interests_title: 'Was Nachbarn in %{title} interessiert:',
-      tags_skills_title: 'Was Nachbarn in %{title} anbieten:'
+      tags_skills_title: 'Was Nachbarn in %{title} anbieten:',
     },
     household: {
       description: 'Hausgemeinschaften bestehen aus Nachbarn, die im selben Haus wohnen. Inhalte, die dort erstellt werden, sind ausschließlich für Bewohner im Haus sichtbar.',
@@ -1079,28 +1079,28 @@ export default {
         form_text: 'Eure Hausgemeinschaft umfasst mehr als eine Hausnummer? Zum Beispiel, weil ihr euch einen Hof teilt oder eine Baugemeinschaft seid? Sende uns einen Vorschlag und wir prüfen deine Anfrage.\n\nGib unten zunächst die Hausnummer ein, die deiner Hausgemeinschaft hinzugefügt werden soll.\n\nFalls du zum Beispiel in einem Eckhaus wohnst, kannst du optional einen Straßennamen angeben.',
         form_title: 'Hausgemeinschaft erweitern.',
         success_text: 'Dein Änderungswunsch wurde verschickt und wird nun von uns bearbeitet.',
-        success_title: 'Danke!'
+        success_title: 'Danke!',
       },
       label_house: 'Dein Haus',
       label_neighbors: 'Nachbar in deinem Haus: |||| Nachbarn in deinem Haus:',
       link_popup: 'Mehr erfahren',
       modal_content: 'Eine Hausgemeinschaft ist eine geschlossene Hausgruppe für dein Haus. Nachbarn mit der gleichen Adresse sind automatisch in einer Hausgemeinschaft. Inhalte in dieser Gemeinschaft können nur von den Hausbewohnern gesehen werden.\n\nIn diesem Umfeld könnt ihr euch nun über alle Themen, euer Haus betreffend, austauschen: Von der Nebenkostenabrechnung über alltägliche kleine Hilfen bis hin zum gemeinsamen Hoffrühstück.',
       modal_title: 'Was ist eine Hausgemeinschaft?',
-      title: 'Deine Hausgemeinschaft'
+      title: 'Deine Hausgemeinschaft',
     },
     house_invite: {
       invite_link: 'Jetzt einladen',
       title: 'In die Hausgemeinschaft einladen:',
       title_1: 'Einladung erstellen',
       title_2: 'Einladung ausdrucken',
-      title_3: 'Im haus verteilen'
+      title_3: 'Im haus verteilen',
     },
     house_neighbors_modal: { your_house_neighbors: 'Nachbar in deinem Haus |||| Nachbarn in deinem Haus' },
     image_crop_modal: { title: 'Ziehen, um Bildausschnitt zu wählen' },
     image_picker: {
       error_image: 'Bitte beachte, dass nur JPGs und PNGs mit maximal 10MB einzeln hochgeladen werden können.',
       label_change_image: 'Bild ändern',
-      label_set_image: 'Bild hinzufügen'
+      label_set_image: 'Bild hinzufügen',
     },
     image_picker_multiple: { label: 'Füge ein Foto hinzu' },
     input: {
@@ -1141,7 +1141,7 @@ export default {
       placeholder_subject: 'Betreff',
       placeholder_tag: 'Eigenes Schlagwort…',
       placeholder_year: 'JJJJ',
-      placeholder_zip_code: 'Postleitzahl'
+      placeholder_zip_code: 'Postleitzahl',
     },
     invite: {
       empty_list_invites: 'Du hast keine offenen Einladungen in die Nachbarschaft.',
@@ -1152,19 +1152,19 @@ export default {
       list_title_invites: 'Deine offenen Einladungen',
       list_title_users: 'Deine erfolgreichen Einladungen',
       reminded_on: 'Erinnert am',
-      send_reminder: 'Erinnerung schicken'
+      send_reminder: 'Erinnerung schicken',
     },
     invite_email_link: {
       body: 'Hallo!\n\nIch bin jetzt bei %{site_name}, dem sozialen Netzwerk für Nachbarn. Mach doch auch mit!\n\nBei %{site_name} kannst du dich mit deinen Nachbarn vernetzen: Ihr könnt euch im Alltag helfen, Dinge ausleihen, wertvolle Empfehlungen erhalten und gemeinsame Aktivitäten planen.\nDas Gute: Bei %{site_name} tauscht man sich in einem geschützten Raum aus, zu dem nur echte, verifizierte Nachbarn Zugang haben.\n\nKlicke einfach auf den Link, um dich anzumelden: %{link}\n\nIch freue mich, wenn du dabei bist!',
-      subject: 'Mach auch mit bei %{site_name}!'
+      subject: 'Mach auch mit bei %{site_name}!',
     },
     invite_flyer: {
       title_house: 'Hausnachbarn in Hausgemeinschaft einladen',
-      title_pdf: 'Einladung per Handzettel'
+      title_pdf: 'Einladung per Handzettel',
     },
     invite_house: {
       pdf_formal_text: 'Hallo liebe Hausbewohner,\n\nich würde mich freuen, mehr mit Ihnen in Kontakt zu treten!\n\nDafür gibt es auf der Nachbarschaftsplattform %{site_name} unsere Nachbarschaft %{hood}, zu der nur wir als Nachbarn Zugang haben und uns so ganz leicht vernetzen können:\n\n%{flyer_site_url}/hood/%{subdomain}\n\nDort gibt es sogar eine Hausgruppe, in der wir ganz hauseigene Themen besprechen, Hilfen organisieren oder Aktivitäten planen können. Das heißt wir können uns gegenseitig aushelfen und kennen lernen, mal ein Hoffest planen oder uns einfach mal Eier zum Backen leihen.\n\nDas Ganze ist kostenlos – von Nachbar zu Nachbar!\n\nWenn Sie Lust haben mitzumachen, registrieren Sie sich auch einfach auf %{flyer_site_url}/hood/%{subdomain}\n\nDamit auch wirklich nur wir dabei sind, geben Sie bei der Anmeldung den unten stehenden Zugangscode ein.\n\nIch freue mich auf Sie!\n\n%{firstname} %{lastname}',
-      pdf_informal_text: 'Hallo liebe Hausbewohner,\n\nich würde mich freuen, mehr mit euch in Kontakt zu treten!\n\nDafür gibt es auf der Nachbarschaftsplattform %{site_name} unsere Nachbarschaft %{hood}, zu der nur wir als Nachbarn Zugang haben und uns so ganz leicht vernetzen können:\n\n%{flyer_site_url}/hood/%{subdomain}\n\nDort gibt es sogar eine Hausgruppe, in der wir ganz hauseigene Themen besprechen, Hilfen organisieren oder Aktivitäten planen können. Das heißt wir können uns gegenseitig aushelfen und kennen lernen, mal ein Hoffest planen oder uns einfach mal Eier zum Backen leihen.\n\nDas Ganze ist kostenlos – von Nachbar zu Nachbar!\n\nWenn du Lust hast mitzumachen, registriere dich auch einfach auf %{flyer_site_url}/hood/%{subdomain}\n\nDamit auch wirklich nur wir dabei sind, gib bei der Anmeldung den unten stehenden Zugangscode ein.\n\nIch freue mich auf euch!\n\n%{firstname}'
+      pdf_informal_text: 'Hallo liebe Hausbewohner,\n\nich würde mich freuen, mehr mit euch in Kontakt zu treten!\n\nDafür gibt es auf der Nachbarschaftsplattform %{site_name} unsere Nachbarschaft %{hood}, zu der nur wir als Nachbarn Zugang haben und uns so ganz leicht vernetzen können:\n\n%{flyer_site_url}/hood/%{subdomain}\n\nDort gibt es sogar eine Hausgruppe, in der wir ganz hauseigene Themen besprechen, Hilfen organisieren oder Aktivitäten planen können. Das heißt wir können uns gegenseitig aushelfen und kennen lernen, mal ein Hoffest planen oder uns einfach mal Eier zum Backen leihen.\n\nDas Ganze ist kostenlos – von Nachbar zu Nachbar!\n\nWenn du Lust hast mitzumachen, registriere dich auch einfach auf %{flyer_site_url}/hood/%{subdomain}\n\nDamit auch wirklich nur wir dabei sind, gib bei der Anmeldung den unten stehenden Zugangscode ein.\n\nIch freue mich auf euch!\n\n%{firstname}',
     },
     invite_list: {
       email_button: 'Einladung per E-Mail',
@@ -1173,30 +1173,30 @@ export default {
       link_description: 'Der Link kann bequem mit interessierten Nachbarn geteilt werden.',
       link_title: 'Für alle: Einladung per Link',
       pdf_description: 'Der Handzettel eignet sich vor allem für deine Nachbarschaft, wenn du keine E-Mail-Adressen von deinen Nachbarn hast.',
-      pdf_title: 'Für deine Nachbarn: Einladung per Handzettel'
+      pdf_title: 'Für deine Nachbarn: Einladung per Handzettel',
     },
     invite_modal: {
       empty_content: 'Bitte versuch es nochmal mit einem anderen Suchbegriff oder Filtereinstellungen.',
       empty_title: 'Leider keine Treffer.',
-      title: 'Lade deine Nachbarn ein!'
+      title: 'Lade deine Nachbarn ein!',
     },
     invite_pdf: {
       no_hood_pdf_formal_text: 'Hallo liebe Nachbarn,\n\nich würde mich freuen, mehr mit Ihnen in Kontakt zu treten!\n\nDafür können wir auf der Nachbarschaftsplattform %{site_name} unsere Nachbarschaft gründen, zu der nur wir als Nachbarn Zugang haben und uns so ganz leicht vernetzen können.\n\nWir können uns gegenseitig aushelfen und kennen lernen, die besten Laufpartner und zuverlässigsten Babysitter finden – oder dem Nachbarn einfach mal zwei Eier zum Backen leihen.\n\nDas Ganze ist kostenlos – von Nachbar zu Nachbar!\n\nWenn Sie Lust haben mitzumachen, registrieren Sie sich auch einfach auf %{site_name} und über Ihre Adresse werden Sie automatisch unserer Nachbarschaft zugeordnet.\n\nDamit auch wirklich nur wir dabei sind, geben Sie bei der Anmeldung den unten stehenden Zugangscode ein.\n\nIch freue mich auf Sie!\n\n%{firstname}, %{street}',
       no_hood_pdf_informal_text: 'Hallo liebe Nachbarn,\n\nich würde mich freuen, mehr mit euch in Kontakt zu treten!\n\nDafür können wir auf der Nachbarschaftsplattform %{site_name} unsere Nachbarschaft gründen, zu der nur wir als Nachbarn Zugang haben und uns so ganz leicht vernetzen können.\n\nWir können uns gegenseitig aushelfen und kennen lernen, die besten Laufpartner und zuverlässigsten Babysitter finden – oder dem Nachbarn einfach mal zwei Eier zum Backen leihen.\n\nDas Ganze ist kostenlos – von Nachbar zu Nachbar!\n\nWenn du Lust hast mitzumachen, registriere dich auch einfach auf %{flyer_site_url} und über deine Adresse wirst du automatisch unserer Nachbarschaft zugeordnet.\n\nDamit auch wirklich nur wir dabei sind, gib bei der Anmeldung den unten stehenden Zugangscode ein.\n\nIch freue mich auf euch!\n\n%{firstname}, %{street}',
       pdf_formal_text: 'Hallo liebe Nachbarn,\n\nich würde mich freuen, mehr mit Ihnen in Kontakt zu treten!\n\nDafür gibt es auf der Nachbarschaftsplattform %{site_name} unsere Nachbarschaft %{hood}, zu der nur wir als Nachbarn Zugang haben und uns so ganz leicht vernetzen können:\n\n%{flyer_site_url}/hood/%{subdomain}\n\nWir können uns gegenseitig aushelfen und kennen lernen, die besten Laufpartner und zuverlässigsten Babysitter finden - oder dem Nachbarn einfach mal zwei Eier zum Backen leihen.\n\nDas Ganze ist kostenlos – von Nachbar zu Nachbar!\n\nWenn Sie Lust haben mitzumachen, registrieren Sie sich auch einfach auf %{flyer_site_url}/hood/%{subdomain}\n\nDamit auch wirklich nur wir dabei sind, geben Sie bei der Anmeldung den unten stehenden Zugangscode ein.\n\nIch freue mich auf Sie!\n\n%{firstname} %{lastname}',
-      pdf_informal_text: 'Hallo liebe Nachbarn,\n\nich würde mich freuen, mehr mit euch in Kontakt zu treten!\n\nDafür gibt es auf der Nachbarschaftsplattform %{site_name} unsere Nachbarschaft %{hood}, zu der nur wir als Nachbarn Zugang haben und uns so ganz leicht vernetzen können:\n\n%{flyer_site_url}/hood/%{subdomain}\n\nWir können uns gegenseitig aushelfen und kennen lernen, die besten Laufpartner und zuverlässigsten Babysitter finden - oder dem Nachbarn einfach mal zwei Eier zum Backen leihen.\n\nDas Ganze ist kostenlos – von Nachbar zu Nachbar!\n\nWenn du Lust hast mitzumachen, registriere dich auch einfach auf %{flyer_site_url}/hood/%{subdomain}\n\nDamit auch wirklich nur wir dabei sind, gib bei der Anmeldung den unten stehenden Zugangscode ein.\n\nIch freue mich auf euch!\n\n%{firstname}, %{street}'
+      pdf_informal_text: 'Hallo liebe Nachbarn,\n\nich würde mich freuen, mehr mit euch in Kontakt zu treten!\n\nDafür gibt es auf der Nachbarschaftsplattform %{site_name} unsere Nachbarschaft %{hood}, zu der nur wir als Nachbarn Zugang haben und uns so ganz leicht vernetzen können:\n\n%{flyer_site_url}/hood/%{subdomain}\n\nWir können uns gegenseitig aushelfen und kennen lernen, die besten Laufpartner und zuverlässigsten Babysitter finden - oder dem Nachbarn einfach mal zwei Eier zum Backen leihen.\n\nDas Ganze ist kostenlos – von Nachbar zu Nachbar!\n\nWenn du Lust hast mitzumachen, registriere dich auch einfach auf %{flyer_site_url}/hood/%{subdomain}\n\nDamit auch wirklich nur wir dabei sind, gib bei der Anmeldung den unten stehenden Zugangscode ein.\n\nIch freue mich auf euch!\n\n%{firstname}, %{street}',
     },
     invoices: {
       date_format: 'yyyy – MMMM',
       link_download: 'PDF-Download',
       link_to_hood: 'Zu deiner Nachbarschaft',
       text_empty: 'Noch keine Belege erfasst',
-      title: 'Belege'
+      title: 'Belege',
     },
     landing_stories: {
       browse: 'Mehr Geschichten aus der Nachbarschaft',
       intro: 'Das private Netzwerk für deine Nachbarschaft',
-      title: 'Coronavirus: Nachbarschaftshilfe finden und anbieten'
+      title: 'Coronavirus: Nachbarschaftshilfe finden und anbieten',
     },
     layout: {
       link_business: 'Gewerbe',
@@ -1205,7 +1205,7 @@ export default {
       link_imprint: 'Impressum',
       link_organisations: 'Organisationen',
       link_press: 'Presse',
-      link_terms_of_service: 'Nutzungsbedingungen'
+      link_terms_of_service: 'Nutzungsbedingungen',
     },
     layout_header_searchbox: { placeholder: 'Suchbegriff eingeben…' },
     legal: {
@@ -1214,14 +1214,14 @@ export default {
         description_no_token: 'Es ist ein Fehler aufgetreten und die enstprechende Authentifizierung für dein Archiv liegt nicht vor. Bitte stelle sicher, dass du diese Seite über den per E-Mail zur Verfügung gestellten Link aufrufst.',
         description_request: 'Bitte gib das Passwort ein, dass du auch für den Login bei %{site_name} verwendest. So stellen wir sicher, dass nur du deine Daten einsehen kannst.',
         link_download: 'Archiv herunterladen',
-        title: 'Dein Archiv steht bereit.'
+        title: 'Dein Archiv steht bereit.',
       },
       description_honest_promise: 'Darauf kannst du dich bei uns verlassen:\n\n- Gelöscht heißt bei uns gelöscht: wenn du dein Profil löschst, ist es wirklich weg und nicht wieder herstellbar!\n- Wir setzen die strengen Auflagen der DSGVO zur Sicherheit der Datenverarbeitung (Verschlüsselung, Sicherstellung von Vertraulichkeit etc.) um.\n- Wir treffen strenge Vereinbarungen für die Fälle, dass Teile deiner Daten (z.B. deine E-Mail-Adresse, wenn du unser Hilfeteam kontaktiert hast) von unseren Partnern für uns verarbeitet werden.\n- Du kannst ganz leicht deine bei uns gespeicherten Daten abrufen.',
       footer_teaser: {
         description_contact: 'Du hast noch offene Fragen zum Schutz deiner Daten bei %{site_name}?',
         description_register: 'Mach mit und entdecke deine Nachbarschaft.',
         link_contact: 'Zum Kontakt',
-        link_register: 'Jetzt registrieren'
+        link_register: 'Jetzt registrieren',
       },
       options_privacy: {
         description_download_data: 'Gemäß Artikel 20 der Datenschutzgrundverordnung (DSGVO) hast du das Recht, die dich betreffenden personenbezogenen Daten, die du %{site_name} bereitgestellt hast, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. Diese Daten stellen wir dir in Form eines Download-Links per E-Mail zur Verfügung.',
@@ -1235,27 +1235,27 @@ export default {
         title: 'Optionen:',
         title_download_data: 'Recht auf Datenübertragbarkeit',
         title_profile_tracking: 'Profil-Tracking deaktivieren',
-        title_session_tracking: 'Browser-Tracking deaktivieren'
+        title_session_tracking: 'Browser-Tracking deaktivieren',
       },
       options_terms: {
         description_download: 'Hier kannst du dir unsere Nutzungsbedingungen als PDF herunterladen.',
         link_download: 'PDF runterladen',
         title: 'Optionen:',
-        title_download: 'Unsere Nutzungsbedingungen herunterladen'
+        title_download: 'Unsere Nutzungsbedingungen herunterladen',
       },
       title_honest_promise: 'Es ist uns ein wichtiges Anliegen, deine Daten zu schützen',
       title_imprint: 'Impressum',
       title_privacy: 'Datenschutz',
-      title_terms: 'Nutzungsbedingungen'
+      title_terms: 'Nutzungsbedingungen',
     },
     legal_text: {
       date_format: 'MMM yyyy',
       text_edit_date: 'Stand: %{date}',
-      text_version: 'Version: %{version}'
+      text_version: 'Version: %{version}',
     },
     link_modal: {
       content: 'Wenn du deine Nachbarn z.B. mit einer persönlichen Nachricht auf diesen Inhalt aufmerksam machen möchtest, kopiere den Link und platziere ihn in der Nachricht. \n\nBitte beachte, der Link funktioniert nur für registrierte Nachbarn in deiner Nachbarschaft.',
-      title: 'Teile diesen Inhalt!'
+      title: 'Teile diesen Inhalt!',
     },
     list_controls: { reset: 'zurücksetzen' },
     login: {
@@ -1277,7 +1277,7 @@ export default {
       workaround_reset_open: 'Setze dein Passwort zurück',
       workaround_reset_text: 'Wir senden dir eine E-Mail, damit du dein Passwort ändern kannst.',
       workaround_reset_title: 'Neues Passwort erstellen',
-      workaround_title: 'Probleme mit deinem Passwort?'
+      workaround_title: 'Probleme mit deinem Passwort?',
     },
     magic: {
       link_request: {
@@ -1286,8 +1286,8 @@ export default {
         info_text: '**Du hast einen Direkt-Link zum Einloggen angefordert und er funktioniert nicht?**\n\nHast du den Direkt-Link zum Einloggen vor mehr als 1 Stunde angefordert, verliert er seine Gültigkeit. Fordere in diesem Fall den Direkt-Link einfach erneut an.',
         info_title: 'Direkt-Link ungültig?',
         text: 'Dein Direkt-Link zum Einloggen ist leider nicht mehr gültig.',
-        title: 'Ups!'
-      }
+        title: 'Ups!',
+      },
     },
     map: { geo_data: 'Geodaten: geodatenzentrum.de' },
     marital_statuses: {
@@ -1299,21 +1299,21 @@ export default {
       its_complicated: 'Ui… ist kompliziert',
       married: 'Verheiratet',
       single: 'Single',
-      widowed: 'Verwitwet'
+      widowed: 'Verwitwet',
     },
     marketplace_embeddable: {
       header_email: 'Du kannst dieser Person zur Zeit nur per E-Mail antworten.',
       header_post: 'Dein Marktplatzbeitrag:',
       link_edit: 'Sicherheitseinstellung ändern',
       link_email: 'Per E-Mail antworten',
-      subject_email: 'Antwort zum Beitrag "%{title}"'
+      subject_email: 'Antwort zum Beitrag "%{title}"',
     },
     messages: {
       banner_marketplace: 'Hier findest du Anfragen zu Marktplatzbeiträgen, die du auch für Personen außerhalb von nebenan.de sichtbar gemacht hast. Du kannst die Sichtbarkeit deiner Marktplatzbeiträge jederzeit ändern. Wenn du Fragen hast, melde dich gerne bei unserem Hilfe-Team unter [Kontakt](%{support_url}).',
       confirm_delete_content: 'Bitte beachte, dass mit Klick auf "Bestätigen" alle Inhalte dieser persönlichen Nachricht unwiderruflich gelöscht werden.',
       confirm_delete_title: 'Möchtest du diese persönliche Nachricht wirklich löschen?',
       message_deleted: 'Diese Nachricht wurde gelöscht.',
-      placeholder_message: 'Nachricht verfassen…'
+      placeholder_message: 'Nachricht verfassen…',
     },
     meta: {
       description: '%{site_name} ist Deutschlands größtes soziales Netzwerk für Nachbarn. Kennenlernen, empfehlen, helfen: Sei dabei und entdecke deine Nachbarschaft.',
@@ -1417,7 +1417,7 @@ export default {
       title_template: '%s | %{site_name}',
       title_terms: 'Nutzungsbedingungen',
       title_tips: 'Tipps und Angebote',
-      title_unsubscribe: 'Newletter abbestellen'
+      title_unsubscribe: 'Newletter abbestellen',
     },
     neighborhood: {
       label_full_neighborhoods_count: 'Mit Umgebung:',
@@ -1429,13 +1429,13 @@ export default {
       link_special_places: 'Besondere Orte',
       link_tags: 'Interessen & Angebote',
       link_tips: 'Tipps und Angebote',
-      title: 'Deine Nachbarschaft %{hood}'
+      title: 'Deine Nachbarschaft %{hood}',
     },
     neighbors: {
       description: '%{smart_count} Nachbar |||| %{smart_count} Nachbarn',
       empty_content_description: 'Fehlt dir jemand aus deiner Nachbarschaft? Lade nette Nachbarn ein.',
       empty_content_link: 'Jetzt einladen',
-      title: 'Du und deine Nachbarn'
+      title: 'Du und deine Nachbarn',
     },
     notification: {
       claimed_business_profile: 'Neues lokales Gewerbe in deiner Nachbarschaft.',
@@ -1510,7 +1510,7 @@ export default {
       post_reply: 'Neuer Kommentar von %{firstname} zum Beitrag:',
       say_hello: 'Neu in %{hood_title}',
       thank: '%{firstname} sagt Danke!',
-      user_mentioned: '%{firstname} hat dich erwähnt:'
+      user_mentioned: '%{firstname} hat dich erwähnt:',
     },
     notifications: {
       empty_list: 'Zur Zeit gibt es keine neuen Benachrichtigungen aus deiner Nachbarschaft.',
@@ -1525,9 +1525,9 @@ export default {
         label_skip: 'Nächstes',
         thanks_label_reload: 'Noch eine Runde!',
         thanks_title_liked: 'Danke, dass du lokale Gewerbe unterstützt!',
-        thanks_title_skipped: 'Danke!'
+        thanks_title_skipped: 'Danke!',
       },
-      pois_poll_close_modal: { title: 'Bitte gib eine Begründung ein:' }
+      pois_poll_close_modal: { title: 'Bitte gib eine Begründung ein:' },
     },
     onboarding_home: {
       banner_document: 'Leider konnten wir dein Foto nicht eindeutig deiner Adresse zuordnen. Versuche es erneut oder wähle eine andere Verifikationsmethode.',
@@ -1537,7 +1537,7 @@ export default {
         content: '## Was möchtest du tun?\n\n- Mein lokales Gewerbe auf [%{businesses_url}](%{businesses_url}) verwalten\n- Als Nachbar auf %{site_name} registrieren',
         link_manage: 'Lokales Gewerbe verwalten',
         link_verify: 'Als Nachbar registrieren',
-        title: 'Hallo %{name}'
+        title: 'Hallo %{name}',
       },
       description_pending_status_flyer: 'Bring deine Nachbarschaft mit einem Klick auf über 100 Nachbarn.',
       description_pending_status_hood: 'Mach einen Vorschlag für Name und Grenzen deiner Nachbarschaft.',
@@ -1566,14 +1566,14 @@ export default {
         content: '## Was möchtest du tun?\n\n- Meine Organisation auf %{organizations_url} verwalten\n- Als Nachbar auf [%{site_name}](%{trusted_root}) verifizieren',
         link_manage: 'Organisation verwalten',
         link_verify: 'Als Nachbar verifizieren',
-        title: 'Hallo %{name}'
+        title: 'Hallo %{name}',
       },
       title_pending_status_flyer: 'Starthilfe geben',
       title_pending_status_hood: 'Deine Nachbarschaft',
       title_pending_status_interests: 'Deine Interessen',
       title_pending_status_profile: 'Dein Profilbild',
       title_pending_status_skills: 'Deine Angebote',
-      title_suggestion: 'Name und Grenzen deiner Nachbarschaft'
+      title_suggestion: 'Name und Grenzen deiner Nachbarschaft',
     },
     onboarding_hood: {
       defined_hood_info_text: 'Du gehörst zu den Ersten in deiner Nachbarschaft auf %{site_name}. Damit sich das schnell ändert, benötigen wir deine Hilfe, denn nur du als Nachbar kennst deine Nachbarschaft am besten. Mach einen Vorschlag wie deine Nachbarschaft heißen soll und wie die Grenzen verlaufen. Im nächsten Schritt zeigen wir dir, wie du deine Nachbarn einladen kannst.',
@@ -1602,7 +1602,7 @@ export default {
       undefined_hood_join_info_text: 'Du gehörst zu den Ersten in deiner Nachbarschaft auf %{site_name}. Damit das nicht so bleibt, werden wir gemeinsam die Ärmel hochkrempeln. Zunächst benötigen wir deine Hilfe, denn du als Nachbar kennst deine Nachbarschaft am besten. Mach einen Vorschlag wie deine Nachbarschaft auf %{site_name} heißen soll und wie ihre Grenzen verlaufen. Ist dieser Schritt getan, lade nette Nachbarn aus deiner Umgebung ein. Zum Beispiel, indem du Einladungen verteilst. Bitte hier vielleicht auch lokale Geschäfte oder deine Kommunalverwaltung um Unterstützung. Warst du erfolgreich und weitere Nachbarn haben sich registriert, eröffnen wir deine Nachbarschaft.',
       undefined_hood_join_text: 'Noch ist deine Nachbarschaft nicht eröffnet, aber es haben sich bereits weitere Nachbarn in deiner direkten Umgebung angemeldet. Es geht also bald los! Hilf uns und mach einen Vorschlag zu Name und Grenzen deiner Nachbarschaft.',
       undefined_hood_map_title: 'Deine Umgebung:',
-      undefined_hood_title: 'Hallo %{firstname}, deine Nachbarschaft ist noch nicht eröffnet.'
+      undefined_hood_title: 'Hallo %{firstname}, deine Nachbarschaft ist noch nicht eröffnet.',
     },
     onboarding_invite: {
       cancel_invite: 'Jetzt nicht einladen',
@@ -1610,7 +1610,7 @@ export default {
       hint_distribute: '**Unser Tipp:** _Wenn du nette Nachbarn kennst, von denen du keine E-Mail-Adresse hast, nutze den Handzettel. Drucke ihn aus und wirf ihn in den Briefkasten._',
       intro_text: 'Gemeinsam macht es mehr Spaß! Und je mehr ihr seid, desto schneller eröffnen wir eure Nachbarschaft. Hier sind 3 Möglichkeiten, wie du deine Nachbarn schon jetzt einladen kannst.',
       modal_info_content: 'Damit deine Nachbarschaft möglichst schnell wächst, hast du drei einfache Möglichkeiten deine Nachbarn einzuladen:\n\n 1. Du hast die E-Mail-Adresse einiger deiner Nachbarn? Lade sie per Mail ein. Du kannst auch mehrere Nachbarn mit einer Nachricht einladen.\n\n 2. Kopiere den Link und platziere ihn in einer eigenen Mail an deine Nachbarn, auf Webseiten oder anderen sozialen Netzwerken. Bitte beachte: Der Link funktioniert nur für deine Nachbarn.\n\n 3. Handzettel. Dieser analoge Weg ist beliebt und vor allem bewährt. Drucke den Einladungszettel aus und wirf ihn in die Briefkästen in deinem Haus oder deiner Straße. Den Text kannst du vorher noch anpassen.',
-      modal_info_title: 'So funktioniert‘s:'
+      modal_info_title: 'So funktioniert‘s:',
     },
     onboarding_pending: {
       description_uploader: 'Es ist viel schöner, wenn du deinen Nachbarn mit einem Lächeln begegnest.',
@@ -1624,7 +1624,7 @@ export default {
       title_progress: 'Du in der Nachbarschaft (%{step} von 3)',
       title_tags_interests: 'Zeige deinen Nachbarn woran du Interesse und Freude hast:',
       title_tags_potentials: 'Zeige deinen Nachbarn, womit du ihnen helfen kannst:',
-      title_uploader: 'Lass dein Lächeln sprechen!'
+      title_uploader: 'Lass dein Lächeln sprechen!',
     },
     onboarding_verification: {
       badge_favorite: 'Beliebteste Methode',
@@ -1743,7 +1743,7 @@ export default {
       text_force_phone_form: 'Die Nummer stimmt nicht?',
       title_legal: '*Dein Personalausweis sollte uns nur folgende Informationen liefern:',
       verifying_modal_link: 'Andere Methode wählen',
-      verifying_modal_loading: 'Deine Adresse wird geprüft…'
+      verifying_modal_loading: 'Deine Adresse wird geprüft…',
     },
     onboarding_verification_b: {
       badge_secure: 'Einfach & sicher',
@@ -1763,25 +1763,25 @@ export default {
       method_geo: 'Per GPS',
       method_id: 'Per Ausweis',
       method_mitrust: 'Per Dienstleister',
-      method_postcard: 'Per Postkarte'
+      method_postcard: 'Per Postkarte',
     },
     partner: {
       accept_label: '**Ja**, ich gehe durchs Leben mit %{firstname} und möchte sie/ihn auch zu meinem Profil hinzufügen.',
-      decline_label: 'Nein, ich möchte nicht als Partner/in im Profil von %{firstname} erscheinen und sie/ihn auch nicht zu meinem Profil hinzufügen.'
+      decline_label: 'Nein, ich möchte nicht als Partner/in im Profil von %{firstname} erscheinen und sie/ihn auch nicht zu meinem Profil hinzufügen.',
     },
     partners_banner: {
       intro: 'Unsere Partner',
-      title: 'Organisationen und Institutionen mit denen wir zusammenarbeiten'
+      title: 'Organisationen und Institutionen mit denen wir zusammenarbeiten',
     },
     password_confirm: {
       reset: 'Passwort vergessen?',
-      reset_success: 'Wir haben dir eine E-Mail mit einem Link geschickt, über den du dein Passwort ändern kannst.'
+      reset_success: 'Wir haben dir eine E-Mail mit einem Link geschickt, über den du dein Passwort ändern kannst.',
     },
     password_forgotten_modal: {
       complete_text: 'Wir haben dir eine E-Mail mit einem Link geschickt, über den du dein Passwort ändern kannst.',
       complete_title: 'Hilfe naht!',
       submit: 'Passwort anfragen',
-      title: 'Gib hier deine E-Mail ein:'
+      title: 'Gib hier deine E-Mail ein:',
     },
     password_reset: {
       form_send: 'Passwort setzen',
@@ -1794,30 +1794,30 @@ export default {
       invalid_token_title: 'Ups!',
       resend_success_text: 'Wir haben dir eine E-Mail mit einem Link geschickt, über den du dein Passwort ändern kannst.',
       resend_success_title: 'Hilfe naht!',
-      success_title: 'Dein Passwort wurde erfolgreich geändert.'
+      success_title: 'Dein Passwort wurde erfolgreich geändert.',
     },
     pet_types: {
       type_cat: 'Katze',
       type_dog: 'Hund',
-      type_other: 'Andere'
+      type_other: 'Andere',
     },
     picker_textarea: { tooltip_upload: 'Bild einfügen' },
     pilot_banner: {
       text: 'Deine Nachbarschaft %{hood} befindet sich aktuell in der Startphase. Was bedeutet das?',
-      title: 'Willkommen %{firstname}!'
+      title: 'Willkommen %{firstname}!',
     },
     pois: {
       poi_details: {
         contact_card: {
           role_employee: 'Angestellter',
           role_manager: 'Leiter',
-          role_owner: 'Inhaber'
+          role_owner: 'Inhaber',
         },
         engagement: {
           link_feed: 'Alle Beiträge',
           link_guestbook: 'Alle Empfehlungen',
           title_feed: 'Beiträge',
-          title_info: 'Information'
+          title_info: 'Information',
         },
         label_engagement_feed: 'Beiträge',
         label_engagement_guestbook: 'Empfehlungen',
@@ -1833,15 +1833,15 @@ export default {
           text_hours: '%{open}–%{close}',
           text_nextday_closed: 'Öffnet %{day}. %{time}',
           text_nextday_open: 'Schließt %{day}. %{time}',
-          text_open: 'Schließt um %{time}'
+          text_open: 'Schließt um %{time}',
         },
         profile_address: {
           modal_content: 'Hier siehst du die genaue Lage des Ortes. ',
-          modal_title: 'Reichweite'
+          modal_title: 'Reichweite',
         },
         profile_contacts: {
           link_imprint: 'Impressum',
-          modal_imprint_title: 'Impressum'
+          modal_imprint_title: 'Impressum',
         },
         profile_controls: {
           button_message: 'Nachricht',
@@ -1853,23 +1853,23 @@ export default {
           label_unblock: 'Wieder einblenden',
           modal_confirm_block_content: 'Beiträge eines ausgeblendeten Gewerbes werden dir nicht mehr angezeigt. Das ausgeblendete Gewerbe erfährt dabei nicht, dass du seine Beiträge nicht sehen möchtest. Du kannst Ausblendungen jederzeit wieder aufheben oder erneut aktivieren.',
           modal_confirm_block_title: 'Möchtest du dieses Gewerbe ausblenden?',
-          modal_title_abuse: 'Du möchtest diesen Ort melden?'
+          modal_title_abuse: 'Du möchtest diesen Ort melden?',
         },
         profile_cover: {
           modal_description_info_business: 'Lokale Gewerbe gehören zu einer guten Nachbarschaft dazu. Sie erleichtern den Alltag und beleben das Viertel. Mit %{site_name} binden wir sie in die Gemeinschaft ein und bringen zusammen, was zusammen gehört: Anwohner und lokales Gewerbe. \n\nLokale Gewerbe können auf %{site_name} kostenlos empfohlen werden und kostenlos ein eigenes Gewerbeprofil erstellen. \n\nGegen Gebühr ermöglichen wir lokalem Gewerbe zusätzlich die Platzierung von Inhalten bei %{site_name} – so wird ein Laden oder Dienstleister vor Ort zu einem Lokalen Partner für die Nachbarschaft. \n\nMit seiner Gebühr ermöglicht er den langfristigen Betrieb der Plattform und kann sich gleichzeitig in seiner Nachbarschaft präsentieren. Das Tolle daran: Gemeinsam schärfen wir das Bewusstsein für die Bedeutung des lokalen Einkaufs. Denn wer Ort kauft, stärkt nicht nur die ansässigen Geschäfte und Dienstleister, sondern sorgt dafür, dass Leben im Viertel ist und die Menschen gerne dort leben.',
           modal_description_info_organization: 'Gemeinnützige Organisationen und nachbarschaftliche Initiativen sind zentrale Akteure der Nachbarschaft. Sie sorgen für den lokalen Zusammenhalt, begegnen sozialen Missständen und fördern die Belebung des Viertels. \n\nÜber ihr Organisationsprofil können sich gemeinnützige und kommunale Einrichtungen mit den Nachbarn aus der direkten Nachbarschaft auf %{site_name} kostenfrei vernetzen. \n\nOrganisationen, die sich mehr Sichtbarkeit über ihre eigene Nachbarschaft hinaus wünschen, haben die Möglichkeit, „Lokaler Partner“ zu werden. Mit Entrichtung eines finanziellen Beitrags erhöhen sie ihre Reichweite und unterstützen uns dabei, %{site_name} weiterzuentwickeln und den nachhaltigen Betrieb sicherzustellen. ',
           modal_title_info_business: 'Lokaler Partner: Gewerbe',
-          modal_title_info_organization: 'Lokaler Partner: Organisation'
+          modal_title_info_organization: 'Lokaler Partner: Organisation',
         },
         profile_fake_controls: {
           button_like: 'Empfehlen',
-          button_message: 'Nachricht'
+          button_message: 'Nachricht',
         },
         profile_links: {
           link_claim: 'Diesen Ort übernehmen',
-          link_create: 'Neuen Ort anlegen'
+          link_create: 'Neuen Ort anlegen',
         },
-        profile_name: { likes_count: '%{smart_count} Empfehlung |||| %{smart_count} Empfehlungen' }
+        profile_name: { likes_count: '%{smart_count} Empfehlung |||| %{smart_count} Empfehlungen' },
       },
       poi_list: {
         create_action: 'Hinzufügen',
@@ -1884,8 +1884,8 @@ export default {
         list_empty_special_loc_subcategory: 'Du kennst einen besonderen Ort in deiner Nachbarschaft? Empfiehl deinen Nachbarn die besten Orte für „%{tier2}“',
         title_biz: 'Lokale Gewerbe',
         title_org: 'Organisationen',
-        title_special_loc: 'Besondere Orte'
-      }
+        title_special_loc: 'Besondere Orte',
+      },
     },
     poi_autocomplete: { distance: '%{distance} km' },
     poi_category_selector: {
@@ -1931,19 +1931,19 @@ export default {
       option_category_special_loc_subcategory_playground: 'Spielplatz',
       option_category_special_loc_subcategory_shopping_street: 'Beliebte Straße',
       option_category_special_loc_subcategory_transportation: 'Personenbeförderung',
-      option_subcategory_empty: 'Subkategorie wählen'
+      option_subcategory_empty: 'Subkategorie wählen',
     },
     poi_create_modal: {
       label_owner: 'Ich bin verantwortlich für diesen Ort',
       placeholder_addr_add0: 'Zusätzliches Adressfeld',
       placeholder_addr_add1: 'Zusätzliches Adressfeld',
       placeholder_name: 'Wie heißt der Ort?',
-      title: 'Name und Adresse des Ortes:'
+      title: 'Name und Adresse des Ortes:',
     },
     poi_heart: {
       button_like: 'Empfehlen',
       button_unlike: 'Empfohlen',
-      label_unlike: 'Nicht mehr empfehlen'
+      label_unlike: 'Nicht mehr empfehlen',
     },
     poi_list_controls: {
       filter_category_biz_subcategory_arts_culture: 'Kunst & Kultur',
@@ -1985,19 +1985,19 @@ export default {
       filter_liked_by_me: 'Meine Empfehlungen anzeigen',
       sort_date_added: 'Neueste zuerst',
       sort_likes: 'Meiste Empfehlungen',
-      sort_title: 'Alphabetisch'
+      sort_title: 'Alphabetisch',
     },
     poi_owner_modal: {
       content: 'Dein lokales Gewerbe kannst du auf [%{businesses_url}](%{magic_url}) übernehmen. Du musst dich dafür nicht neu registrieren, sondern lediglich dein Gewerbe bestätigen.',
       link: 'Jetzt dein Gewerbe übernehmen',
-      title: 'Dein lokales Gewerbe übernehmen'
+      title: 'Dein lokales Gewerbe übernehmen',
     },
     poi_select_modal: {
       button_create_poi: 'Ort hinzufügen',
       description: 'Ein Ort kann ein lokales Geschäft oder Dienstleistung, eine medizinische Einrichtung, ein Verein oder auch einfach nur der schönste Ort deiner Nachbarschaft sein.',
       label_not_found: 'Kein passendes Ergebnis?',
       placeholder_autocomplete: 'Was möchtest du empfehlen?',
-      title: 'Ort empfehlen'
+      title: 'Ort empfehlen',
     },
     poi_subcategory: {
       biz: 'Lokales Geschäft oder Dienstleistung',
@@ -2040,7 +2040,7 @@ export default {
       special_loc_subcategory_ping_pong_table: 'Tischtennisplatte',
       special_loc_subcategory_playground: 'Spielplatz',
       special_loc_subcategory_shopping_street: 'Beliebte Straße',
-      special_loc_subcategory_transportation: 'Personenbeförderung'
+      special_loc_subcategory_transportation: 'Personenbeförderung',
     },
     popup_modals: {
       donations_modal: {
@@ -2049,27 +2049,27 @@ export default {
         link: 'Jetzt Förderer werden',
         link_variation_b: 'Jetzt Förderer werden',
         title: '%{firstname}, mit nur einer Tasse Kaffee pro Monat von jedem Nutzer können wir nebenan.de langfristig betreiben.',
-        title_variation_b: '%{firstname}, eine persönliche Bitte'
+        title_variation_b: '%{firstname}, eine persönliche Bitte',
       },
       gdpr_modal: {
         alternative: 'Mehr zum Datenschutz',
         button: 'Verstanden',
         text: 'Hallo %{firstname}, \n\ndu hast es sicher schon mitbekommen: Am 25. Mai ist die Datenschutzgrundverordnung (DSGVO) - eine gesetzliche Änderung auf EU-Ebene zum Schutz personenbezogener Daten - in Kraft getreten. Eine wichtige und richtige Sache, wie wir von %{site_name} finden und deren Anforderungen wir übrigens schon vor Einführung der DSGVO zu großen Teilen gerecht wurden. \n\n**Was hat sich geändert?** \n\n* Datenschutzerklärung \nWir haben unsere Datenschutzerklärung an die DSGVO angepasst. Diese findest du [hier](/privacy) \n\n* Abruf deiner personenbezogenen Daten \nJetzt ist es noch einfacher, die über dich gespeicherten, personenbezogenen Daten anzufordern und einzusehen. So kannst du von deinem Recht auf Datenübertragbarkeit nach Artikel 20 DSGVO Gebrauch machen. \n\nBei Fragen, wende dich gerne jederzeit an unser Hilfe-Team: [%{email_company}](mailto:%{email_company})\n\nAuf gute Nachbarschaft!\nDein Team von %{site_name}',
-        title: 'Die Datenschutzgrundverordnung bei %{site_name}'
+        title: 'Die Datenschutzgrundverordnung bei %{site_name}',
       },
       new_surrounding_hoods_modal: {
         close: 'Alles klar!',
         text: 'In deiner Umgebung wurden neue Nachbarschaften eröffnet. Du siehst jetzt auch Inhalte von dort.',
         title: '%{firstname}, deine Umgebung wächst.',
-        to_settings: 'Zur Umgebungseinstellung'
+        to_settings: 'Zur Umgebungseinstellung',
       },
       partner_accept_modal: {
         decide_later: 'Später entscheiden',
-        modal_title: '%{firstname} %{lastname} hat dich als Partner/in eingetragen!'
+        modal_title: '%{firstname} %{lastname} hat dich als Partner/in eingetragen!',
       },
       recommendations_modal: {
         text: 'Empfiehl lokale Geschäfte, Restaurants, Dienstleister, Ärzte, Handwerker, Babysitter und sonstiges Interessantes aus deiner Umgebung.',
-        title: 'Neu bei %{site_name}: Orte empfehlen'
+        title: 'Neu bei %{site_name}: Orte empfehlen',
       },
       surrounding_hoods_modal: {
         already_informed: 'Danke, ich bin schon informiert.',
@@ -2078,18 +2078,18 @@ export default {
         settings_text: 'Du kannst selbst entscheiden, welche angrenzenden Nachbarschaften für dich interessant sind. Mit einem Klick kannst du mit ihnen in Austausch treten.',
         settings_title: 'Deine Einstellungen',
         visibilty_text: 'Wirst du in deiner Umgebung aktiv, ist dein Nachname für Nachbarn aus den angrenzenden Nachbarschaften nur gekürzt zu sehen. Alle Nachbarn aus deiner Nachbarschaft sehen dich weiterhin mit vollem Namen. Und du sie natürlich auch.',
-        visibilty_title: 'Du in deiner Umgebung.'
+        visibilty_title: 'Du in deiner Umgebung.',
       },
       welcome_modal: {
         button: 'Los geht\'s!',
         text: 'Das ist deine Nachbarschaft %{hood}. Drumherum befinden sich deine angrenzenden Nachbarschaften. Mit ihnen kannst du in Austausch treten, sofern diese bereits aktiv sind. Wirst du in deiner Umgebung aktiv, ist dein Nachname für Nachbarn aus den angrenzenden Nachbarschaften nur gekürzt zu sehen. Alle Nachbarn aus deiner eigenen Nachbarschaft sehen dich mit Vor- und Nachname. Und du sie natürlich auch.',
-        title: 'Willkommen in deiner Nachbarschaft!'
-      }
+        title: 'Willkommen in deiner Nachbarschaft!',
+      },
     },
     postcard_extras_modal: {
       description: 'Deine Adresse ist:\n\n**%{street} %{house_number}, %{zip_code} %{city}**\n\nWenn wir zusätzliche Informationen (wie etwa Tür- oder Etagennummer) brauchen, um die Postkarte zuzustellen, schreib sie bitte in das Formular.',
       placeholder: 'Tür, etage, etc…',
-      title: 'Für den Postboten'
+      title: 'Für den Postboten',
     },
     post_wizard_form: {
       hint_price: 'Der Preis wird nur für Beiträge mit dem Typ "Verkaufen" angezeigt.',
@@ -2113,7 +2113,7 @@ export default {
       subcategory_34: 'Tausche',
       subcategory_35: 'Verkaufe',
       subcategory_44: 'Empfehlung geben',
-      subcategory_45: 'Empfehlung suchen'
+      subcategory_45: 'Empfehlung suchen',
     },
     press: {
       articles_item_link: 'Veröffentlichung ansehen',
@@ -2124,12 +2124,12 @@ export default {
       files_presskit_link: 'Pressemappe runterladen',
       history_text: '%{site_name} ist das größte soziale Netzwerk für Nachbarn in Deutschland. Die Vision der Plattform: Nachbarschaften in lebenswerte Orte zu verwandeln, wo sich Nachbarn kennenlernen und zu Hause fühlen. Teilen, tauschen, helfen, verschenken, verleihen, verabreden – all das ist über %{site_name} kostenlos möglich. \n\n%{site_name} ist geprüft und geschützt: Als deutschlandweit einzige Nachbarschaftsplattform ist %{site_name} TÜV-zertifiziert.\n\nDie Nachbarschaftsplattform wurde 2015 von Christian Vollmann, Till Behnke, Matthes Scheinhardt, Ina Remmers, Michael Vollmann und Sven Tantau geründet. Christian Vollmann und seine Mitgründer möchten mit der Plattform den gesellschaftlichen Herausforderungen, wie zunehmende Anonymität, Einsamkeit, demographischer Wandel sowie Ressourcenverschwendung entgegenwirken und mehr lokale Gemeinschaft ermöglichen.\n\nBereits seit 2013 beschäftigt sich Christian Vollmann mit Nachbarschaft. Nach einem Umzug mit seiner Familie hatte er das Bedürfnis, die bis dahin noch so anonyme Nachbarschaft kennen zu lernen. Kurzerhand rief er damals ein Online-Forum für seine Straße ins Leben und konnte so Kontakte knüpfen, die bis heute bestehen. \n\nSeit 2018 steht %{site_name} auch Gemeinnützigen, Städten und Kommunen offen. Sie können auf [organisation.nebenan.de](%{organizations_url}) ein offizielles Organisationsprofil anlegen und Anwohner über ihr Engagement im Viertel informieren. \n\n2017 wurde die gemeinnützige [%{site_name} Stiftung gGmbH](http://www.nebenan-stiftung.de) als Tochtergesellschaft ausgegründet. Sie setzt sich bundesweit für mehr lokale Gemeinschaft ein. Dazu vergibt sie seit 2017 den Deutschen Nachbarschaftspreis und initiiert seit 2018 den „Tag der Nachbarn“.',
       stage_tagline: 'Echte Menschen. Echte Gemeinschaft.',
-      stage_title: 'Erfahren Sie mehr über die Vision starker und lebendiger Nachbarschaft.'
+      stage_title: 'Erfahren Sie mehr über die Vision starker und lebendiger Nachbarschaft.',
     },
     press_banner: { intro: 'Bekannt aus:' },
     price_input: {
       label_currency: 'EURO',
-      placeholder: '––'
+      placeholder: '––',
     },
     privacy: {
       home_and_neighborhood: 'Haus und Nachbarschaft',
@@ -2152,7 +2152,7 @@ export default {
       visibility_pets: 'Deine Haustiere',
       visibility_results_title: 'Was deine Nachbarn von deinem Profil sehen können:',
       visibility_skills: 'Du bietest',
-      visibility_street: 'Straße'
+      visibility_street: 'Straße',
     },
     privacy_banner: { title: 'Geschützt & Privat' },
     privacy_modal: {
@@ -2160,14 +2160,14 @@ export default {
       privacy_title: 'Privat',
       protect_text: '%{site_name} ist die Anlaufstelle für einen unkomplizierten und direkten Austausch. Nur echte, verifizierte Nachbarn erhalten Zugang zu deiner Nachbarschaft.',
       protect_title: 'Geschützt',
-      title: 'Unter Nachbarn.'
+      title: 'Unter Nachbarn.',
     },
     privacy_select: {
       group_null: 'Gruppe auswählen',
       privacy_group: 'Nur für eine Gruppe',
       privacy_hood: 'Nur für deine Nachbarschaft',
       privacy_house: 'Nur für dein Haus',
-      privacy_surrounding: 'Nachbarschaft mit Umgebung'
+      privacy_surrounding: 'Nachbarschaft mit Umgebung',
     },
     profile: {
       about_title: 'Über %{firstname}:',
@@ -2175,7 +2175,7 @@ export default {
       abuse_neighbor: 'Melden',
       activity: {
         link_show_all_groups: 'Alle meine Gruppen anzeigen',
-        link_show_all_posts: 'Alle meine Beiträge anzeigen'
+        link_show_all_posts: 'Alle meine Beiträge anzeigen',
       },
       activity_answers_title: 'Antworten, Danke und Hallo:',
       activity_groups_title: 'Gruppenmitgliedschaften:',
@@ -2190,7 +2190,7 @@ export default {
         label: 'Geburtstag:',
         placeholder_day: 'Tag',
         placeholder_month: 'Monat',
-        placeholder_year: 'Jahr'
+        placeholder_year: 'Jahr',
       },
       block_user: 'Ausblenden',
       card_ben_label: 'Besonders engagiert',
@@ -2251,7 +2251,7 @@ export default {
       surrounding_hood_intro_text: '%{firstname} ist aus einer Nachbarschaft in deiner direkten Umgebung: %{hood}',
       unblock_user: 'Wieder einblenden',
       your_partner_female: 'ist deine Partnerin',
-      your_partner_male: 'ist dein Partner'
+      your_partner_male: 'ist dein Partner',
     },
     profile_delete_modal: {
       confirm_button: 'Profil unwiderruflich löschen',
@@ -2273,39 +2273,39 @@ export default {
       form_option_6_text: '**HINWEIS:** Du bist umgezogen? Dann haben wir einen einfacheren Weg für dich. Durch Angabe deiner neuen Adresse im Nutzerprofil können wir den Umzug für dich veranlassen. Vorteil: Die Angaben in deinem Profil bleiben erhalten.',
       password_confirm_text: 'Du kannst dein Nutzerkonto jederzeit löschen. Alle deine Daten und Einträge sind so unwiderruflich gelöscht. Wichtiger Hinweis: Falls du mit der gleichen E-Mail-Adresse eine Organisation oder ein lokales Gewerbe angelegt hast, wird auch dieses Profil gelöscht. Bei Fragen wende dich bitte an unser Hilfe-Team.\n\nWas musst du tun? Wir bitten dich zunächst aus Sicherheitsgründen dein Passwort einzugeben. Nach erfolgreicher Eingabe deines Passworts erscheint die Option dein Nutzerkonto und eventuell damit verbundene Organisations- oder Gewerbekonten unwiderruflich zu löschen.',
       reason_text: 'Wir möchten %{site_name} stetig verbessern. Deshalb liegt uns deine ehrliche Meinung am Herzen. Sag uns doch noch kurz, warum du dein Profil löschen möchtest:',
-      title: 'Gelöscht ist gelöscht.'
+      title: 'Gelöscht ist gelöscht.',
     },
     promotion_list: {
       intro: '%{site_name}',
-      title: 'Dein Werkzeug für eine lebendige Nachbarschaft'
+      title: 'Dein Werkzeug für eine lebendige Nachbarschaft',
     },
     public_feed: {
       description_empty_list: 'In dieser Nachbarschaft gibt es noch keine öffentlichen Veranstaltungen.',
       link_to_neighborhood: 'Zur Nachbarschaftsseite',
       title: 'Alle öffentlichen Einträge',
-      title_details: 'Öffentlicher Eintrag'
+      title_details: 'Öffentlicher Eintrag',
     },
     public_feed_item: {
       label_type_1: 'Öffentlicher Beitrag',
       label_type_13: 'Öffentliche Terminumfrage',
       label_type_14: 'Öffentlicher Marktplatz-Eintrag',
       label_type_2: 'Öffentliche Veranstaltung',
-      link_register: 'Jetzt registrieren'
+      link_register: 'Jetzt registrieren',
     },
     public_feed_item_meta: { label_hood: 'Aus %{title}' },
     public_item_description_modal: {
       content: 'Um beispielsweise auch Personen außerhalb der Nachbarschaft zu erreichen, kann der Verfasser einen Beitrag als "Öffentlichen Beitrag" markieren. Dieser ist dann auch im nicht-eingeloggten Zustand auf der Nachbarschaftsseite sichtbar. Öffentliche Beiträge zeigen nur den Inhalt des Beitrags und den Namen der Nachbarschaft, aus der der Beitrag stammt. Namen, Profilbilder und Antworten anderer Nachbarn verbleiben geschützt in der Nachbarschaft und können von Außenstehenden nicht gesehen werden. So schützen wir euch und eure nachbarschaftliche Privatsphäre.',
-      title: 'Öffentliche Beiträge. Was ist das?'
+      title: 'Öffentliche Beiträge. Was ist das?',
     },
     public_item_link_modal: {
       content: 'Dieser Beitrag ist öffentlich und kann somit auch außerhalb deiner Nachbarschaft und Umgebung gelesen werden. So kannst du den Beitrag auch mit Freunden und Nachbarn teilen, die noch nicht auf %{site_name} registriert sind. Namen und Reaktionen auf den Beitrag bleiben geschützt und sind im nicht-eingeloggten Zustand nicht sichtbar.\n\nKopiere den oben stehenden Link und teile ihn bei Bedarf mit interessierten Personen außerhalb der Nachbarschaft.',
-      title: 'Interessanter Beitrag? Teile ihn mit deinen Freunden.'
+      title: 'Interessanter Beitrag? Teile ihn mit deinen Freunden.',
     },
     public_toggle: {
       hint: '**Hinweis: Du möchtest auch Personen außerhalb deiner Nachbarschaft und Umgebung erreichen? Dann nutze die Option "Öffentlicher Beitrag", um deinen Beitrag auch außerhalb von %{site_name} teilen und sichtbar machen zu können.**',
       label: 'Öffentlicher Beitrag',
       link_more: 'Mehr Info',
-      warning: 'Auch außerhalb von %{site_name} sichtbar.'
+      warning: 'Auch außerhalb von %{site_name} sichtbar.',
     },
     registration: {
       header_address: 'Deine Adresse',
@@ -2330,19 +2330,19 @@ export default {
       modal_title_terms: 'Unsere Nutzungsbedingungen',
       prefill_modal_content: 'Deine Facebook-Daten für den Login wurden erfolgreich übermittelt.\n\nUm die Registrierung abzuschließen, musst du jetzt nur noch deine Daten bestätigen und gegebenenfalls ergänzen.',
       prefill_modal_title: 'Verbunden!',
-      title_complete: 'Deine Registrierung ist abgeschlossen!'
+      title_complete: 'Deine Registrierung ist abgeschlossen!',
     },
     registration_b: {
       credentials_form: {
         input_error_password: 'Dein Passwort entspricht nicht den Anforderungen',
-        input_tip_password: 'Bitte erstelle ein Passwort mit mindestens 8 Zeichen, bestehend aus Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen.'
+        input_tip_password: 'Bitte erstelle ein Passwort mit mindestens 8 Zeichen, bestehend aus Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen.',
       },
       edit_section: {
         header_edit_address: '**Deine Adresse:** %{street} %{house_number}, %{zip_code} %{city}',
         header_edit_general: 'Stimmt etwas nicht? Zum Bearbeiten hier klicken.',
         header_edit_info: 'Überprüfe vor der Verifizierung, ob die angegebene Adresse korrekt ist:',
         header_edit_name: '**Dein Name:** %{firstname} %{lastname}',
-        link_verify: 'Jetzt Adresse verifizieren!'
+        link_verify: 'Jetzt Adresse verifizieren!',
       },
       form_card: {
         expandable_description_step_address: 'Bitte gib deine aktuelle Adresse vollständig an, um **Zutritt zu deiner korrekten Nachbarschaft** zu erhalten.',
@@ -2359,20 +2359,20 @@ export default {
         hint_name: '#### Wer sieht meinen Namen?\n\n Dein Nachname wird nur in deiner eigenen Nachbarschaft angezeigt. In angrenzenden Nachbarschaften bist du lediglich mit Vornamen und abgekürztem Nachnamen zu sehen.\n\n #### Sind meine Daten sicher?\n\n Ja. Der Schutz deiner Daten hat für uns höchste Priorität. Wir geben deine Daten niemals zu Werbezwecken an Dritte weiter. %{site_name} ist als einzige deutsche Nachbarschaftsplattform TÜV-geprüft.',
         link_info_expand: 'Mehr erfahren',
         link_terms: 'Es gelten unsere Nutzungsbedingungen',
-        modal_title_terms: 'Unsere Nutzungsbedingungen'
+        modal_title_terms: 'Unsere Nutzungsbedingungen',
       },
       link_facebook: 'Verbinden',
       name_address_form: { input_tip_lastname: 'Nur in deiner eigenen Nachbarschaft sichtbar' },
       name_form: {
         input_tip_lastname: 'Nur in deiner eigenen Nachbarschaft sichtbar',
-        label_salutation: 'Wie dürfen wir dich ansprechen?'
+        label_salutation: 'Wie dürfen wir dich ansprechen?',
       },
       prefill_modal_content: 'Deine Facebook-Daten für den Login wurden erfolgreich übermittelt.\n\nUm die Registrierung abzuschließen, musst du jetzt nur noch deine Daten bestätigen und gegebenenfalls ergänzen.',
-      prefill_modal_title: 'Verbunden!'
+      prefill_modal_title: 'Verbunden!',
     },
     registration_banner: {
       link: 'Jetzt registrieren',
-      title: 'Mach mit und belebe deine Nachbarschaft!'
+      title: 'Mach mit und belebe deine Nachbarschaft!',
     },
     search: {
       address: '%{street} %{house_number}',
@@ -2390,9 +2390,9 @@ export default {
         title_groups: 'Gruppen:',
         title_neighbors: 'Nachbarn:',
         title_organizations: 'Organisationen:',
-        title_places: 'Orte:'
+        title_places: 'Orte:',
       },
-      show_all: 'Alle anzeigen'
+      show_all: 'Alle anzeigen',
     },
     settings: { header: 'Deine Einstellungen' },
     settings_blocked: {
@@ -2416,7 +2416,7 @@ export default {
       section_organizations_title: 'Ausgeblendete Organisationen',
       section_users_description: 'Du hast folgende Nachbarn ausgeblendet und wirst deshalb keine E-Mails zu ihren Aktivitäten erhalten.',
       section_users_empty: 'Du hast niemanden ausgeblendet.',
-      section_users_title: 'Ausgeblendete Nachbarn'
+      section_users_title: 'Ausgeblendete Nachbarn',
     },
     settings_emails: {
       header: 'E-Mails',
@@ -2436,12 +2436,12 @@ export default {
       options_name_important_news: 'Wichtige Neuigkeiten',
       options_name_weekly_digest: 'Wochenrückblick',
       options_text: 'Du möchtest informiert bleiben? Wir senden dir in regelmäßigen Abständen per E-Mail Zusammenfassungen zu bestimmten Themen. So verpasst du nichts und erhältst die wichtigsten Informationen übersichtlich in einer Nachricht.',
-      options_title: 'Regelmäßige Zusammenfassungen'
+      options_title: 'Regelmäßige Zusammenfassungen',
     },
     settings_hoods: {
       header: 'Umgebung',
       info_modal_content: 'Neben deiner eigenen Nachbarschaft hast du die Möglichkeit, weitere, direkt an deine Nachbarschaft angrenzende Nachbarschaften für den Austausch miteinander zu aktivieren. \n\nDabei kannst du einzelne angrenzende Nachbarschaften auswählen und aktivierte Gebiete auch jederzeit wieder deaktivieren. \n\nErstellst du Beiträge, hast du die Wahl diese in deiner Hausgemeinschaft, in deiner Nachbarschaft oder allen von dir aktivierten angrenzenden Nachbarschaften zu teilen. \n\nTeilst du Inhalte mit angrenzenden Nachbarschaften, ist dort nur dein Vorname sowie der erste Buchstabe deines Nachnamens sichtbar.',
-      info_modal_title: 'Was sind angrenzende Nachbarschaften?'
+      info_modal_title: 'Was sind angrenzende Nachbarschaften?',
     },
     settings_list: {
       blocked_text: 'Die von dir ausgeblendeten Nachbarn und Beiträge findest du hier.',
@@ -2449,22 +2449,22 @@ export default {
       email_text: 'Du entscheidest, über welche Aktivitäten aus deiner Nachbarschaft und Umgebung du per E-Mail benachrichtigt werden möchtest.',
       email_title: 'E-Mail Benachrichtigungen',
       hoods_text: 'Hier kannst du festlegen, welche angrenzenden Nachbarschaften du aktivieren möchtest.',
-      hoods_title: 'Umgebung'
+      hoods_title: 'Umgebung',
     },
     settings_unsubscribe: {
       header: 'E-Mail Einstellung bearbeiten:',
       settings_link: 'Einstellungen verwalten',
-      submit: 'Deaktivieren'
+      submit: 'Deaktivieren',
     },
     shortened_name_modal: {
       confirm: 'Verstanden! Bitte diese Information nicht mehr anzeigen.',
       text: 'Wirst du in deiner Umgebung aktiv, ist dein Nachname für Nachbarn aus den angrenzenden Nachbarschaften nur abgekürzt zu sehen. Daher siehst auch du die Nachnamen von Nachbarn aus deiner Umgebung nur gekürzt. Alle Nachbarn aus deiner eigenen Nachbarschaft sehen dich weiterhin mit Vor- und Nachnamen. Und du sie natürlich auch.',
-      title: 'Abgekürzter Nachname in deiner Umgebung'
+      title: 'Abgekürzter Nachname in deiner Umgebung',
     },
     signups: {
       empty_content_description: 'Fehlt dir jemand aus deiner Nachbarschaft? Lade nette Nachbarn ein.',
       empty_content_link: 'Jetzt einladen',
-      title: 'Neue Nachbarn'
+      title: 'Neue Nachbarn',
     },
     softblock_modal: {
       decline: 'Alle Angaben sind korrekt',
@@ -2475,12 +2475,12 @@ export default {
       title_changed: 'Vielen Dank für die korrigierten Angaben.',
       title_edit: 'Stimmen deine Angaben?',
       title_not_changed: 'Vielen Dank für deine Rückmeldung!',
-      title_summary: 'Stimmen deine Angaben?'
+      title_summary: 'Stimmen deine Angaben?',
     },
     stories: {
       list_back: 'Zur Übersicht',
       list_more: 'Mehr Top Stories anzeigen',
-      list_title: 'Geschichten aus der Nachbarschaft:'
+      list_title: 'Geschichten aus der Nachbarschaft:',
     },
     story_stage: { to_detail: 'Mehr erfahren' },
     system: {
@@ -2492,9 +2492,9 @@ export default {
         lang: 'de-DE',
         link: 'Trotzdem fortfahren',
         text: 'Du verwendest aktuell den Internet Explorer. Dieser Browser ist 6 Jahre alt und entspricht nicht mehr den aktuellen Sicherheitsstandards. Aus diesem Grund wird dieser Browser von uns nicht mehr unterstützt, sodass wir keine optimale Darstellung garantieren können. Für eine einwandfreie Nutzung von nebenan.de und zu deiner eigenen Sicherheit empfehlen wir dir dringend den Wechsel auf einen neueren Browser.',
-        title: 'nebenan.de | Dieser Browser ist veraltet und wird von uns nicht mehr unterstützt.'
+        title: 'nebenan.de | Dieser Browser ist veraltet und wird von uns nicht mehr unterstützt.',
       },
-      time_format: 'HH:mm'
+      time_format: 'HH:mm',
     },
     tags: {
       tags_card: {
@@ -2502,14 +2502,14 @@ export default {
         description_potentials: 'Tauschen, teilen, leihen. Hilfsbereite Nachbarn haben in ihrem Profil angegeben, was sie gut können oder besitzen und bieten es dir an, wenn du es brauchst.',
         link_show_more: '%{smart_count} Weitere',
         title_interests: 'Interessen deiner Nachbarn:',
-        title_potentials: 'Angebote deiner Nachbarn:'
+        title_potentials: 'Angebote deiner Nachbarn:',
       },
-      title: 'Interessen & Angebote'
+      title: 'Interessen & Angebote',
     },
     tags_modal: {
       text_empty: 'Vielleicht kannst du das ändern? Denn je mehr Nachbarn dabei sind, desto vielseitiger wird deine Nachbarschaft. Du kannst deinen direkten Nachbarn zum Beispiel einen Handzettel in den Briefkasten werfen oder sie per E-Mail einladen.\n\nHier geht‘s zu den Einladungsoptionen:',
       title: 'Alle Nachbarn, die „%{tag}“ in ihrem Profil als Schlagwort haben:',
-      title_empty: 'Leider keine Nachbarn mit „%{tag}“ im Profil dabei.'
+      title_empty: 'Leider keine Nachbarn mit „%{tag}“ im Profil dabei.',
     },
     tags_picker: {
       label_interests_culture: 'Kunst & Kultur',
@@ -2520,13 +2520,13 @@ export default {
       label_potentials_hood: 'Du für deine Nachbarn',
       label_potentials_language: 'Ich spreche',
       label_potentials_misc: 'Anderes',
-      label_potentials_sharing: 'Ich teile gerne'
+      label_potentials_sharing: 'Ich teile gerne',
     },
     tag_button: {
       option_add_tag: 'Zum Profil hinzufügen',
       option_remove_tag: 'Von deinem Profil entfernen',
       option_show_neighbors_with_tag: 'Nachbarn mit diesem Schlagwort',
-      option_tag_in_profile: '%{firstname} und du haben das gleiche Schlagwort'
+      option_tag_in_profile: '%{firstname} und du haben das gleiche Schlagwort',
     },
     tag_list: { tags_attributes: 'Echte Beispiele aus der Nachbarschaft' },
     team: {
@@ -2539,37 +2539,37 @@ export default {
       members_list_expand: 'Alle anzeigen',
       team_vacancy_section: {
         link_apply: 'Jetzt bewerben!',
-        link_back: 'Zurück'
+        link_back: 'Zurück',
       },
       team_video: {
         intro: 'Lerne uns kennen',
-        title: 'Ein Blick hinter die Kulissen'
+        title: 'Ein Blick hinter die Kulissen',
       },
       vacancies: {
         description: 'Werde Teil unseres Teams! Hier findest du aktuell offene Stellen.',
         intro: 'Offene Stellen',
-        title: 'Unsere Stellenangebote'
+        title: 'Unsere Stellenangebote',
       },
       vision_header_intro: 'Unsere Vision',
       vision_header_title: 'Schön, dass wir Nachbarn sind.',
-      vision_text: 'Wir möchten, dass sich die Menschen in ihrer Straße und ihrem Viertel Zuhause fühlen und aus Fremden Nachbarn werden.\n\nWir sind überzeugt davon mit %{site_name} einen kleinen Beitrag zu den großen gesellschaftlichen Herausforderungen dieser Zeit leisten zu können. Denn gerade Nachbarschaft kann Antworten auf Themen wie demographischer Wandel, Anonymisierung der Gesellschaft, nachhaltiger Umgang mit Ressourcen und Sicherheit liefern.\n\nStarke und lebendige Nachbarschaften wirken im Kleinen und für jeden Einzelnen. Sie verbessern unsere Lebensqualität dort, wo wir die meiste und wichtigste Zeit verbringen. In unserem Zuhause, unserer Straße, unserem Wohngebiet. Wir möchten mit einer guten Idee und Engagement helfen, Nachbarschaft wieder zu beleben.'
+      vision_text: 'Wir möchten, dass sich die Menschen in ihrer Straße und ihrem Viertel Zuhause fühlen und aus Fremden Nachbarn werden.\n\nWir sind überzeugt davon mit %{site_name} einen kleinen Beitrag zu den großen gesellschaftlichen Herausforderungen dieser Zeit leisten zu können. Denn gerade Nachbarschaft kann Antworten auf Themen wie demographischer Wandel, Anonymisierung der Gesellschaft, nachhaltiger Umgang mit Ressourcen und Sicherheit liefern.\n\nStarke und lebendige Nachbarschaften wirken im Kleinen und für jeden Einzelnen. Sie verbessern unsere Lebensqualität dort, wo wir die meiste und wichtigste Zeit verbringen. In unserem Zuhause, unserer Straße, unserem Wohngebiet. Wir möchten mit einer guten Idee und Engagement helfen, Nachbarschaft wieder zu beleben.',
     },
     teaser_code_verify: {
       link: 'Zugangscode eingeben',
-      title: 'Hast du bereits einen Zugangscode?'
+      title: 'Hast du bereits einen Zugangscode?',
     },
     textarea: { tooltip_emoji: 'Emoji einfügen' },
     times_table: {
       end_date: 'Ende',
       start_date: 'Beginn',
       time: 'Uhrzeit',
-      where: 'Wo'
+      where: 'Wo',
     },
     tips: {
       description: 'Hier findest du Tipps für eine aktive Nachbarschaft sowie besondere Angebote von lokalen Gewerben und Kooperationspartnern von nebenan.de.',
       empty_list: 'Wir haben aktuell keine Tipps oder Angebote für dich. Schau bald wieder vorbei!',
       link_back_to_tips: 'Zur Tippübersicht',
-      title: 'Tipps und Angebote'
+      title: 'Tipps und Angebote',
     },
     tip_carousel: {
       label_about: 'Mehr zu diesem Tipp',
@@ -2582,7 +2582,7 @@ export default {
       modal_advertisement_content: 'Wir zeigen dir bezahlte Inhalte lokaler Gewerbe und ausgewählter Partner. Wir von %{site_name} achten dabei darauf, dass es sich dabei um Produkte und Dienstleistungen handelt, die einen lokalen Kontext haben und dir für deinen Alltag einen echten Mehrwert bieten. \n\nAuf Dauer kann ein Projekt wie %{site_name} nur bestehen, wenn es Mittel und Wege findet, sich aus eigener Kraft zu refinanzieren. Ein Weg dorthin ist die Einbeziehung regionaler Gewerbetreibender, die sich in Form gegen ein Entgelt auf %{site_name} präsentieren können. \n\nDu kannst die bezahlte Inhalte für Nachbarn jederzeit blockieren. \n',
       modal_advertisement_title: 'Warum werden dir bezahlte Inhalte angezeigt?',
       title_advertisement: 'Bezahlter Inhalt',
-      title_own: 'Tipp von %{site_name}'
+      title_own: 'Tipp von %{site_name}',
     },
     unsubscribe: {
       complete_text: 'Wir haben dich von unserer Empfänger-Liste für den Newsletter gestrichen. Du erhältst somit zukünftig keine Informationen zu neuen Funktionen und Optimierungen auf %{site_name}.\n\nDu kannst den Newsletter in deinen Einstellungen natürlich jederzeit wieder aktivieren.',
@@ -2597,11 +2597,11 @@ export default {
       label_reason_type_other: 'Andere Gründe',
       label_reason_type_unnecessary: 'Neue Funktionen und Möglichkeiten bei %{site_name} entdecke ich auch ohne Newsletter',
       link_settings: 'Zu deinen Einstellungen',
-      placeholder_reason_body: 'Ich möchte keinen Newsletter, weil…'
+      placeholder_reason_body: 'Ich möchte keinen Newsletter, weil…',
     },
     user: {
       mask_birthday: 'd. MMMM',
-      mask_birthday_full: 'd. MMMM yyyy'
+      mask_birthday_full: 'd. MMMM yyyy',
     },
     users_list_controls: {
       filter_default: 'Kein Filter',
@@ -2611,7 +2611,7 @@ export default {
       sort_default: 'Nach Relevanz',
       sort_distance: 'Nach Entfernung',
       sort_lastname: 'Nach Nachname',
-      sort_street: 'Nach Straße'
+      sort_street: 'Nach Straße',
     },
     user_card: { address_internal: 'Über [%{public_marketplace_site_url}](http://%{public_marketplace_site_url})' },
     user_name: {
@@ -2619,12 +2619,12 @@ export default {
       active_neighbor_badge_tooltip_male: 'Besonders engagierter Nachbar',
       name_internal: 'Anfrage zu deinem Marktplatzbeitrag',
       supporter_badge_tooltip_female: 'Nachbarschafts-Förderin',
-      supporter_badge_tooltip_male: 'Nachbarschafts-Förderer'
+      supporter_badge_tooltip_male: 'Nachbarschafts-Förderer',
     },
     why_verify: {
       description: 'Durch die Verifizierung stellen wir sicher, dass sich nur echte Nachbarn anmelden. Dieser Schritt dient ausschließlich eurer Sicherheit und einem vertrauensvollen, nachbarschaftlichen Miteinander.',
       link: 'Jetzt Adresse verifizieren',
-      title: 'Nur echte Nachbarn haben Zugang'
+      title: 'Nur echte Nachbarn haben Zugang',
     },
     zip_code_area: {
       empty_label: 'Lass uns das ändern.',
@@ -2639,15 +2639,15 @@ export default {
       modal_info_content: 'Der schnellste Weg zu einer aktiven Nachbarschaft ist es, selbst die Initiative zu ergreifen. \n\nRegistriere dich, mach einen Vorschlag zu Name und Grenzen deiner Nachbarschaft und empfiehl %{site_name} weiteren Nachbarn.\n',
       modal_info_title: 'Deine Nachbarschaft startet bald!',
       neighbors_count: 'Nachbarn: %{smart_count}',
-      registration_link: 'Nachbarschaft starten'
+      registration_link: 'Nachbarschaft starten',
     },
     marketplace: {
       item: {
         reserved_banner_label: 'Reserviert',
         currency_label: '€',
         sponsored_label: 'Gewerblicher Beitrag',
-        category_give_label: 'Zu verschenken'
-      }
-    }
-  }
+        category_give_label: 'Zu verschenken',
+      },
+    },
+  },
 };

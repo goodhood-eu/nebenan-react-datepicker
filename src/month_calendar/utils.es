@@ -16,13 +16,9 @@ const getISODate = (date) => {
   return date;
 };
 
-export const isBefore = (dateA, dateB) => {
-  return getISODate(dateA) < getISODate(dateB);
-};
+export const isBefore = (dateA, dateB) => getISODate(dateA) < getISODate(dateB);
 
-export const isAfter = (dateA, dateB) => {
-  return getISODate(dateA) > getISODate(dateB);
-};
+export const isAfter = (dateA, dateB) => getISODate(dateA) > getISODate(dateB);
 
 export const getMonthLabel = (string, locale) => {
   const date = getMonth(string);

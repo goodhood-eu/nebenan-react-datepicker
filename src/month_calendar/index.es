@@ -75,7 +75,7 @@ const renderMonth = ({ month, minDate, maxDate, selected, onCellClick }) => {
         'is-today': today === key,
         'is-selected': key === selected,
         'is-disabled': isDisabled,
-        'is-interactive': !isDisabled && !isStartFiller && !isEndFiller
+        'is-interactive': !isDisabled && !isStartFiller && !isEndFiller,
       });
 
       let label;
