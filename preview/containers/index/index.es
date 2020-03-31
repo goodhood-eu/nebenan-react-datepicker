@@ -18,11 +18,13 @@ export default () => {
       <Header noLink>nebenan-react-datepicker</Header>
       <div className="preview-section">
         <DatePicker
-          locale={locale}
           selected={selectedDate}
           minDate={minDate}
           maxDate={maxDate}
           onChange={handleDateSelect}
+          firstDay={locale.firstDay}
+          weekdayShortLabels={locale.weekdayShortLabels}
+          monthLabels={locale.monthLabels}
         />
       </div>
     </article>

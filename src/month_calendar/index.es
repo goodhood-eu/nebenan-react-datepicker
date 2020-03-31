@@ -30,13 +30,13 @@ const Controls = ({ label, onNext, onPrevious }) => {
 const DAYS_COUNT = 7;
 
 const renderLabelsRow = (locale) => {
-  const { firstDay, modules: { calendar: { weekdaysShort } } } = locale;
+  const { firstDay, weekdayShortLabels } = locale;
   const labels = arrayOf(DAYS_COUNT).map((i) => {
     const key = i + firstDay > 6 ? 0 : i + firstDay;
     const className = clsx('c-datepicker-label', {
       'is-weekend': key === 6 || key === 0,
     });
-    return <th key={key} className={className}>{weekdaysShort[key]}</th>;
+    return <th key={key} className={className}>{weekdayShortLabels[key]}</th>;
   });
   return <tr>{labels}</tr>;
 };
@@ -98,12 +98,17 @@ const Calendar = ({ locale, month, minDate, maxDate, selected, onCellClick }) =>
 
 const MonthCalendar = ({
   className: passedClassName,
-  locale,
+
+  firstDay,
+  weekdayShortLabels,
+  monthLabels,
+
   selected,
   onChange,
   minDate,
   maxDate,
 }) => {
+  const locale = { firstDay, weekdayShortLabels, monthLabels };
   const [month, setMonth] = useState(null);
 
   const monthWithDefault = month || getMonthString(selected);
@@ -117,7 +122,7 @@ const MonthCalendar = ({
   };
 
   const className = clsx('c-datepicker', passedClassName);
-  const monthLabel = getMonthLabel(monthWithDefault , locale);
+  const monthLabel = getMonthLabel(monthWithDefault, locale);
 
   const onCellClick = onChange;
 
@@ -137,7 +142,10 @@ const MonthCalendar = ({
 
 MonthCalendar.propTypes = {
   className: PropTypes.string,
-  locale: PropTypes.object,
+
+  firstDay: PropTypes.number,
+  weekdayShortLabels: PropTypes.arrayOf(PropTypes.string),
+  monthLabels: PropTypes.arrayOf(PropTypes.string),
 
   selected: PropTypes.string,
   onChange: PropTypes.func.isRequired,

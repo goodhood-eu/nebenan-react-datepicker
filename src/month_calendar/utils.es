@@ -22,8 +22,8 @@ export const isAfter = (dateA, dateB) => getISODate(dateA) > getISODate(dateB);
 
 export const getMonthLabel = (string, locale) => {
   const date = getMonth(string);
-  const { modules: { calendar: { months } } } = locale;
-  return `${months[date.getMonth()]} ${date.getFullYear()}`;
+  const { monthLabels } = locale;
+  return `${monthLabels[date.getMonth()]} ${date.getFullYear()}`;
 };
 
 export const getMonthDetails = (string) => {
