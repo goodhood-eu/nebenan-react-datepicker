@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import {
-  getMonthLabel,
-  getMonthString,
-} from './utils';
+import { getISODate, getMonthLabel, getMonthString, toDate } from './utils';
 import MonthView from './month_view';
 
 const Controls = ({ theme, label, onNext, onPrevious }) => (
@@ -44,7 +41,9 @@ const MonthCalendar = ({
   const className = clsx(theme.root, passedClassName);
   const monthLabel = getMonthLabel(monthWithDefault, locale);
 
-  const onCellClick = onChange;
+  const handleCellClick = (dateStr) => {
+    onChange(toDate(dateStr));
+  };
 
   return (
     <article className={className}>
@@ -57,7 +56,9 @@ const MonthCalendar = ({
         />
       </header>
       <MonthView
-        {...{ locale, theme, month: monthWithDefault, minDate, maxDate, selected, onCellClick }}
+        onCellClick={handleCellClick}
+        selected={getISODate(selected)}
+        {...{ locale, theme, month: monthWithDefault, minDate, maxDate }}
       />
     </article>
   );
@@ -72,16 +73,10 @@ MonthCalendar.propTypes = {
   weekdayShortLabels: PropTypes.arrayOf(PropTypes.string).isRequired,
   monthLabels: PropTypes.arrayOf(PropTypes.string).isRequired,
 
-  selected: PropTypes.string,
+  selected: PropTypes.object,
   onChange: PropTypes.func.isRequired,
-  minDate: PropTypes.oneOfType([
-    PropTypes.object,
-    PropTypes.string,
-  ]),
-  maxDate: PropTypes.oneOfType([
-    PropTypes.object,
-    PropTypes.string,
-  ]),
+  minDate: PropTypes.object,
+  maxDate: PropTypes.object,
 };
 
 export default MonthCalendar;

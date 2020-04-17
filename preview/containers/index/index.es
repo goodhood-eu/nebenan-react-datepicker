@@ -5,7 +5,7 @@ import locale from './locale';
 import theme from './theme';
 
 export default () => {
-  const [preselectedDate, setPreselectedDate] = useState('1994-05-16');
+  const [preselectedDate, setPreselectedDate] = useState(new Date(1994, 4, 16));
   const [selectedDate, setSelectedDate] = useState(null);
 
   const defaults = { theme, ...locale };

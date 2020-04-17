@@ -24,7 +24,7 @@ describe('MonthCalendar', () => {
     const props = {
       ...locale,
       theme,
-      selected: '2020-04-17',
+      selected: new Date(2020, 3, 17),
       onChange,
     };
 
@@ -40,6 +40,6 @@ describe('MonthCalendar', () => {
     day.last().simulate('click');
 
     assert.isTrue(onChange.calledOnce, 'onChange callback was called');
-    assert.isTrue(onChange.calledWith('2020-04-09'), 'correct day was provided by onChange');
+    assert.deepEqual(onChange.getCall(0).args[0], new Date(2020, 3, 9), 'correct day was provided by onChange');
   });
 });

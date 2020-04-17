@@ -5,8 +5,15 @@ import formatDate from 'date-fns/format';
 export const pad = (number, digits = 2) => String(number).padStart(digits, 0);
 export const arrayOf = (number) => Array.from(new Array(number)).map((_, index) => index);
 
-export const getMonth = (string) => {
-  const [year, month] = string.split('-').map((item) => parseInt(item, 10));
+export const toDate = (isoDate) => {
+  const [year, month, day] = isoDate.split('-').map((item) => parseInt(item, 10));
+  return new Date(year, month - 1, day);
+};
+
+export const getMonth = (stringOrDate) => {
+  if (stringOrDate instanceof Date) return stringOrDate;
+
+  const [year, month] = stringOrDate.split('-').map((item) => parseInt(item, 10));
   return new Date(year, month - 1);
 };
 
@@ -14,7 +21,7 @@ export const getMonthString = (current, diff = 0) => (
   formatDate(current ? addMonths(getMonth(current), diff) : new Date(), 'yyyy-MM')
 );
 
-const getISODate = (date) => {
+export const getISODate = (date) => {
   if (date instanceof Date) return formatDate(date, 'yyyy-MM-dd');
   return date;
 };
