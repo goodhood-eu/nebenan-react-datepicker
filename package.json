@@ -88,8 +88,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "nebenan-ui-kit": "^4.4.1",
-    "node-sass-glob-importer": "^5.3.2"
+    "nebenan-ui-kit": "^4.4.1"
   },
   "dependencies": {}
 }
