@@ -1,8 +1,6 @@
 import React from 'react';
-import { arrayOf } from 'nebenan-helpers/lib/data';
 import clsx from 'clsx';
-import { formatNumber as pad } from 'nebenan-helpers/lib/formatters';
-import { getMonthDetails, getToday, isAfter, isBefore } from './utils';
+import { arrayOf, getMonthDetails, getToday, isAfter, isBefore, pad } from './utils';
 
 const DAYS_COUNT = 7;
 

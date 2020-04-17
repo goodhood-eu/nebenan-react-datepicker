@@ -2,6 +2,9 @@ import addMonths from 'date-fns/addMonths';
 import getDaysInMonth from 'date-fns/getDaysInMonth';
 import formatDate from 'date-fns/format';
 
+export const pad = (number, digits = 2) => String(number).padStart(digits, 0);
+export const arrayOf = (number) => Array.from(new Array(number)).map((_, index) => index);
+
 export const getMonth = (string) => {
   const [year, month] = string.split('-').map((item) => parseInt(item, 10));
   return new Date(year, month - 1);
