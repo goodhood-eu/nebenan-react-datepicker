@@ -1,6 +1,14 @@
 import React from 'react';
 import clsx from 'clsx';
-import { arrayOf, getMonthDetails, getToday, isAfter, isBefore, pad } from './utils';
+import {
+  arrayOf,
+  getISODate,
+  getMonthDetails,
+  getISOMonth,
+  getToday,
+  pad,
+  toDate,
+} from './utils';
 
 const DAYS_COUNT = 7;
 
@@ -19,6 +27,9 @@ const renderLabelsRow = (locale, theme) => {
 const renderMonth = ({ theme, month, minDate, maxDate, selected, onCellClick }) => {
   const { days, offset } = getMonthDetails(month);
 
+  const selectedISO = getISODate(selected);
+  const monthISO = getISOMonth(month);
+
   const weeks = Math.ceil((days + offset) / DAYS_COUNT);
   const today = getToday();
 
@@ -29,10 +40,11 @@ const renderMonth = ({ theme, month, minDate, maxDate, selected, onCellClick }) 
     const items = arrayOf(DAYS_COUNT).map((day) => {
       const date = shift + day + 1 - offset;
 
-      const key = `${month}-${pad(date)}`;
+      const key = `${monthISO}-${pad(date)}`;
+      const dateObj = toDate(key);
 
-      const isBeforeMinDate = minDate ? isBefore(key, minDate) : false;
-      const isAfterMaxDate = maxDate ? isAfter(key, maxDate) : false;
+      const isBeforeMinDate = minDate ? dateObj < minDate : false;
+      const isAfterMaxDate = maxDate ? dateObj > maxDate : false;
 
       const isDisabled = isBeforeMinDate || isAfterMaxDate;
 
@@ -41,14 +53,14 @@ const renderMonth = ({ theme, month, minDate, maxDate, selected, onCellClick }) 
 
       const className = clsx(theme.cell, {
         [theme.isToday]: today === key,
-        [theme.isSelected]: key === selected,
+        [theme.isSelected]: key === selectedISO,
         [theme.isDisabled]: isDisabled,
         [theme.isInteractive]: !isDisabled && !isStartFiller && !isEndFiller,
       });
 
       let label;
       if (!isStartFiller && !isEndFiller) {
-        const handleClick = onCellClick && !isDisabled ? onCellClick.bind(null, key) : null;
+        const handleClick = onCellClick && !isDisabled ? onCellClick.bind(null, dateObj) : null;
         label = <span className={theme.date} onClick={handleClick}>{date}</span>;
       }
 

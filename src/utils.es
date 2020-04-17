@@ -1,4 +1,3 @@
-import addMonths from 'date-fns/addMonths';
 import getDaysInMonth from 'date-fns/getDaysInMonth';
 import formatDate from 'date-fns/format';
 
@@ -11,33 +10,25 @@ export const toDate = (isoDate) => {
 };
 
 export const getMonth = (stringOrDate) => {
-  if (stringOrDate instanceof Date) return stringOrDate;
-
-  const [year, month] = stringOrDate.split('-').map((item) => parseInt(item, 10));
-  return new Date(year, month - 1);
+  const referenceDate = stringOrDate || new Date();
+  return new Date(referenceDate.getFullYear(), referenceDate.getMonth());
 };
 
-export const getMonthString = (current, diff = 0) => (
-  formatDate(current ? addMonths(getMonth(current), diff) : new Date(), 'yyyy-MM')
+export const getISOMonth = (current) => (
+  formatDate(current, 'yyyy-MM')
 );
 
 export const getISODate = (date) => {
-  if (date instanceof Date) return formatDate(date, 'yyyy-MM-dd');
+  if (date) return formatDate(date, 'yyyy-MM-dd');
   return date;
 };
 
-export const isBefore = (dateA, dateB) => getISODate(dateA) < getISODate(dateB);
-
-export const isAfter = (dateA, dateB) => getISODate(dateA) > getISODate(dateB);
-
-export const getMonthLabel = (string, locale) => {
-  const date = getMonth(string);
+export const getMonthLabel = (date, locale) => {
   const { monthLabels } = locale;
   return `${monthLabels[date.getMonth()]} ${date.getFullYear()}`;
 };
 
-export const getMonthDetails = (string) => {
-  const date = getMonth(string);
+export const getMonthDetails = (date) => {
   const days = getDaysInMonth(date);
   const day = date.getDay();
   const offset = day === 0 ? 6 : day - 1;

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import { getISODate, getMonthLabel, getMonthString, toDate } from './utils';
+import addMonths from 'date-fns/addMonths';
+import { getMonth, getMonthLabel } from './utils';
 import MonthView from './month_view';
 
 const Controls = ({ theme, label, onNext, onPrevious }) => (
@@ -28,22 +29,20 @@ const MonthCalendar = ({
   const locale = { firstDay, weekdayShortLabels, monthLabels };
   const [month, setMonth] = useState(null);
 
-  const monthWithDefault = month || getMonthString(selected);
+  const monthWithDefault = month || getMonth(selected);
 
   const handleNextMonth = () => {
-    setMonth(getMonthString(monthWithDefault, 1));
+    setMonth(addMonths(monthWithDefault, 1));
   };
 
   const handlePreviousMonth = () => {
-    setMonth(getMonthString(monthWithDefault, -1));
+    setMonth(addMonths(monthWithDefault, -1));
   };
 
   const className = clsx(theme.root, passedClassName);
   const monthLabel = getMonthLabel(monthWithDefault, locale);
 
-  const handleCellClick = (dateStr) => {
-    onChange(toDate(dateStr));
-  };
+  const onCellClick = onChange;
 
   return (
     <article className={className}>
@@ -56,9 +55,7 @@ const MonthCalendar = ({
         />
       </header>
       <MonthView
-        onCellClick={handleCellClick}
-        selected={getISODate(selected)}
-        {...{ locale, theme, month: monthWithDefault, minDate, maxDate }}
+        {...{ locale, theme, month: monthWithDefault, minDate, maxDate, selected, onCellClick }}
       />
     </article>
   );
