@@ -4,7 +4,7 @@ const { mount } = require('enzyme');
 
 const locale = require('./locale');
 const theme = require('./theme');
-const MonthCalendar = require('../../lib/month_calendar');
+const MonthCalendar = require('../lib');
 
 describe('MonthCalendar', () => {
   it('renders MonthCalendar', () => {
