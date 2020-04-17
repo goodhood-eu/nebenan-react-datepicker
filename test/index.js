@@ -1,6 +1,7 @@
 const { createElement } = require('react');
-const { assert, expect, spy } = require('chai');
+const { assert } = require('chai');
 const { mount } = require('enzyme');
+const { spy } = require('sinon');
 
 const locale = require('./locale');
 const theme = require('./theme');
@@ -38,7 +39,7 @@ describe('MonthCalendar', () => {
 
     day.last().simulate('click');
 
-    expect(onChange).to.have.been.called(1);
-    expect(onChange).to.have.been.called.with('2020-04-09');
+    assert.isTrue(onChange.calledOnce, 'onChange callback was called');
+    assert.isTrue(onChange.calledWith('2020-04-09'), 'correct day was provided by onChange');
   });
 });
