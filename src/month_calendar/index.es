@@ -66,11 +66,11 @@ const MonthCalendar = ({
 MonthCalendar.propTypes = {
   className: PropTypes.string,
 
-  theme: PropTypes.object,
+  theme: PropTypes.object.isRequired,
 
-  firstDay: PropTypes.number,
-  weekdayShortLabels: PropTypes.arrayOf(PropTypes.string),
-  monthLabels: PropTypes.arrayOf(PropTypes.string),
+  firstDay: PropTypes.number.isRequired,
+  weekdayShortLabels: PropTypes.arrayOf(PropTypes.string).isRequired,
+  monthLabels: PropTypes.arrayOf(PropTypes.string).isRequired,
 
   selected: PropTypes.string,
   onChange: PropTypes.func.isRequired,
