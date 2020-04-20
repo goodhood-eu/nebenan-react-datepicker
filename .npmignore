@@ -2,6 +2,7 @@ build/
 !lib/
 preview/
 test/
+.idea/
 .babelrc
 .browserslistrc
 .eslintignore

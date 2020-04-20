@@ -29,7 +29,6 @@ const scripts = [
 ];
 
 const stylesheets = [
-  'src/**/*.scss',
   'preview/**/*.scss',
 ];
 
@@ -37,7 +36,7 @@ const stylesheets = [
 gulp.task('build', gulp.series(
   'compile:clean',
   'preview:clean',
-  gulp.parallel('compile:babel', 'compile:styles'),
+  gulp.parallel('compile:babel'),
   gulp.parallel('preview:babel', 'preview:styles'),
 ));
 
@@ -56,7 +55,7 @@ gulp.task('watch', (done) => {
   nodemon.on('start', () => setTimeout(reloadPage, 1500));
 
   gulp.watch(scripts, gulp.series('compile:babel', 'preview:babel'));
-  gulp.watch(stylesheets, gulp.series('compile:styles', 'preview:styles', reloadStylesheets));
+  gulp.watch(stylesheets, gulp.series('preview:styles', reloadStylesheets));
   done();
 });
 

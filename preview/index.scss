@@ -1,5 +1,4 @@
 @import 'nebenan-ui-kit/styles';
-@import '../src/**/*.scss';
 @import './components/**/*.scss';
 @import './containers/**/*.scss';
 
@@ -17,6 +16,10 @@ main {
 
 .preview-section {
   margin-top: 30px;
+
+  > ul > li {
+    margin-top: 15px;
+  }
 }
 
 .preview-fancy_image {
