@@ -29,7 +29,7 @@ const MonthCalendar = ({
   const locale = { firstDay, weekdayShortLabels, monthLabels };
   const [month, setMonth] = useState(null);
 
-  const monthWithDefault = month || getMonth(selected);
+  const monthWithDefault = month || getMonth(selected || new Date());
 
   const handleNextMonth = () => {
     setMonth(addMonths(monthWithDefault, 1));

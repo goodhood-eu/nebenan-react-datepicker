@@ -9,19 +9,13 @@ export const toDate = (isoDate) => {
   return new Date(year, month - 1, day);
 };
 
-export const getMonth = (stringOrDate) => {
-  const referenceDate = stringOrDate || new Date();
-  return new Date(referenceDate.getFullYear(), referenceDate.getMonth());
-};
+export const getMonth = (date) => new Date(date.getFullYear(), date.getMonth());
 
 export const getISOMonth = (current) => (
   formatDate(current, 'yyyy-MM')
 );
 
-export const getISODate = (date) => {
-  if (date) return formatDate(date, 'yyyy-MM-dd');
-  return date;
-};
+export const getISODate = (date) => formatDate(date, 'yyyy-MM-dd');
 
 export const getMonthLabel = (date, locale) => {
   const { monthLabels } = locale;
@@ -34,5 +28,3 @@ export const getMonthDetails = (date) => {
   const offset = day === 0 ? 6 : day - 1;
   return { date, days, offset };
 };
-
-export const getToday = () => formatDate(new Date(), 'yyyy-MM-dd');

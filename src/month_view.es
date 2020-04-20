@@ -5,7 +5,6 @@ import {
   getISODate,
   getMonthDetails,
   getISOMonth,
-  getToday,
   pad,
   toDate,
 } from './utils';
@@ -27,11 +26,13 @@ const renderLabelsRow = (locale, theme) => {
 const renderMonth = ({ theme, month, minDate, maxDate, selected, onCellClick }) => {
   const { days, offset } = getMonthDetails(month);
 
-  const selectedISO = getISODate(selected);
+  const selectedISO = selected ? getISODate(selected) : null;
   const monthISO = getISOMonth(month);
+  const minDateISO = minDate ? getISODate(minDate) : null;
+  const maxDateISO = maxDate ? getISODate(maxDate) : null;
 
   const weeks = Math.ceil((days + offset) / DAYS_COUNT);
-  const today = getToday();
+  const today = getISODate(new Date());
 
   const renderWeek = (week) => {
     const shift = week * DAYS_COUNT;
@@ -41,10 +42,9 @@ const renderMonth = ({ theme, month, minDate, maxDate, selected, onCellClick }) 
       const date = shift + day + 1 - offset;
 
       const key = `${monthISO}-${pad(date)}`;
-      const dateObj = toDate(key);
 
-      const isBeforeMinDate = minDate ? dateObj < minDate : false;
-      const isAfterMaxDate = maxDate ? dateObj > maxDate : false;
+      const isBeforeMinDate = minDateISO ? key < minDateISO : false;
+      const isAfterMaxDate = maxDateISO ? key > maxDateISO : false;
 
       const isDisabled = isBeforeMinDate || isAfterMaxDate;
 
@@ -60,7 +60,10 @@ const renderMonth = ({ theme, month, minDate, maxDate, selected, onCellClick }) 
 
       let label;
       if (!isStartFiller && !isEndFiller) {
-        const handleClick = onCellClick && !isDisabled ? onCellClick.bind(null, dateObj) : null;
+        let handleClick;
+        if (onCellClick && !isDisabled) {
+          handleClick = () => onCellClick(toDate(key));
+        }
         label = <span className={theme.date} onClick={handleClick}>{date}</span>;
       }
 
