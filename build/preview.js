@@ -57,7 +57,6 @@ gulp.task('preview:styles', () => (
     .pipe(gulpSass(sassOptions).on('error', gulpSass.logError))
     .pipe(require('gulp-postcss')([
       require('autoprefixer')(),
-      require('postcss-flexbugs-fixes'),
     ]))
     .pipe(require('gulp-rename')(STYLE_FILE))
     .pipe(sourcemaps.write())
