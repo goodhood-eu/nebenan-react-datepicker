@@ -42,7 +42,6 @@ export default () => {
               selected={selectedDate}
               onChange={setSelectedDate}
               minDate={new Date(2020, 2, 1)}
-              maxDate={new Date(2020, 4, 1)}
 
               {...defaults}
             />
