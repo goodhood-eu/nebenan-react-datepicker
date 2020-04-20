@@ -14,6 +14,8 @@ describe('utils', () => {
     dateArrays.forEach((array) => {
       assert.deepEqual(utils.dateToArray(new Date(...array)), array, 'converts date to array correctly');
     });
+
+    assert.isUndefined(utils.dateToArray(), 'empty call');
   });
 
   it('getDateArrayDiff', () => {
@@ -25,6 +27,8 @@ describe('utils', () => {
 
     const date3sm = [1988, 4, 26];
     const date4sm = [1988, 4, 28];
+
+    assert.equal(utils.getDateArrayDiff(), 0, 'empty call');
 
     assert.equal(utils.getDateArrayDiff(date1, date2), 0, 'same date 0 diff');
 

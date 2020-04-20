@@ -20,10 +20,11 @@ const renderMonth = ({ theme, month, minDate, maxDate, selected, onCellClick }) 
   const { days, offset } = getMonthDetails(month);
 
   const weeks = Math.ceil((days + offset) / DAYS_COUNT);
+
   const todayArray = dateToArray(new Date());
-  const selectedArray = selected && dateToArray(selected);
-  const minDateArray = minDate && dateToArray(minDate);
-  const maxDateArray = maxDate && dateToArray(maxDate);
+  const selectedArray = dateToArray(selected);
+  const minDateArray = dateToArray(minDate);
+  const maxDateArray = dateToArray(maxDate);
   const monthArray = dateToArray(month).slice(0, 2);
 
   const renderWeek = (week) => {
@@ -38,8 +39,8 @@ const renderMonth = ({ theme, month, minDate, maxDate, selected, onCellClick }) 
 
       const dateArray = monthArray.concat(date);
 
-      const isBeforeMinDate = minDateArray && getDateArrayDiff(dateArray, minDateArray) > 0;
-      const isAfterMaxDate = maxDateArray && getDateArrayDiff(dateArray, maxDateArray) < 0;
+      const isBeforeMinDate = getDateArrayDiff(dateArray, minDateArray) > 0;
+      const isAfterMaxDate = getDateArrayDiff(dateArray, maxDateArray) < 0;
 
       const isDisabled = isBeforeMinDate || isAfterMaxDate;
 

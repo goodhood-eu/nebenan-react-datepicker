@@ -8,9 +8,11 @@ export const getMonthLabel = (date, locale) => {
   return `${monthLabels[date.getMonth()]} ${date.getFullYear()}`;
 };
 
-export const dateToArray = (date) => [date.getFullYear(), date.getMonth(), date.getDate()];
+export const dateToArray = (date) => date && [date.getFullYear(), date.getMonth(), date.getDate()];
 
 export const getDateArrayDiff = (valueA, valueB) => {
+  if (!valueA || !valueB) return 0;
+
   for (let i = 0; i < 3; i += 1) {
     const diff = valueB[i] - valueA[i];
     if (diff) return diff;
