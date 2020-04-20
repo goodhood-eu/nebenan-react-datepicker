@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const sourcemaps = require('gulp-sourcemaps');
 
 const SCRIPT_SOURCE = `${__dirname}/../src/**/*.es`;
 const SCRIPT_OUTPUT = `${__dirname}/../lib`;
