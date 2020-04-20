@@ -29,18 +29,18 @@ const MonthCalendar = ({
   const locale = { firstDay, weekdayShortLabels, monthLabels };
   const [month, setMonth] = useState(null);
 
-  const monthWithDefault = month || getMonth(selected || new Date());
+  const visibleMonth = month || getMonth(selected || new Date());
 
   const handleNextMonth = () => {
-    setMonth(addMonths(monthWithDefault, 1));
+    setMonth(addMonths(visibleMonth, 1));
   };
 
   const handlePreviousMonth = () => {
-    setMonth(addMonths(monthWithDefault, -1));
+    setMonth(addMonths(visibleMonth, -1));
   };
 
   const className = clsx(theme.root, passedClassName);
-  const monthLabel = getMonthLabel(monthWithDefault, locale);
+  const monthLabel = getMonthLabel(visibleMonth, locale);
 
   const onCellClick = onChange;
 
@@ -55,7 +55,7 @@ const MonthCalendar = ({
         />
       </header>
       <MonthView
-        {...{ locale, theme, month: monthWithDefault, minDate, maxDate, selected, onCellClick }}
+        {...{ locale, theme, month: visibleMonth, minDate, maxDate, selected, onCellClick }}
       />
     </article>
   );
