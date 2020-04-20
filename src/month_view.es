@@ -1,9 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import addMonths from 'date-fns/addMonths';
-import setDate from 'date-fns/setDate';
-import isSameDay from 'date-fns/isSameDay';
-import { arrayOf, getMonthDetails } from './utils';
+import { arrayOf, getMonthDetails, dateToArray, getDateArrayDiff } from './utils';
 
 const DAYS_COUNT = 7;
 
@@ -23,7 +20,11 @@ const renderMonth = ({ theme, month, minDate, maxDate, selected, onCellClick }) 
   const { days, offset } = getMonthDetails(month);
 
   const weeks = Math.ceil((days + offset) / DAYS_COUNT);
-  const today = new Date();
+  const todayArray = dateToArray(new Date());
+  const selectedArray = selected && dateToArray(selected);
+  const minDateArray = minDate && dateToArray(minDate);
+  const maxDateArray = maxDate && dateToArray(maxDate);
+  const monthArray = dateToArray(month).slice(0, 2);
 
   const renderWeek = (week) => {
     const shift = week * DAYS_COUNT;
@@ -35,20 +36,16 @@ const renderMonth = ({ theme, month, minDate, maxDate, selected, onCellClick }) 
       const isStartFiller = isFirstWeek && day < offset;
       const isEndFiller = date > days;
 
-      let monthOffset = 0;
-      if (isStartFiller) monthOffset = -1;
-      else if (isEndFiller) monthOffset = 1;
+      const dateArray = monthArray.concat(date);
 
-      const dateObj = setDate(addMonths(month, monthOffset), date);
-
-      const isBeforeMinDate = minDate ? dateObj < minDate : false;
-      const isAfterMaxDate = maxDate ? dateObj > maxDate : false;
+      const isBeforeMinDate = minDateArray && getDateArrayDiff(dateArray, minDateArray) > 0;
+      const isAfterMaxDate = maxDateArray && getDateArrayDiff(dateArray, maxDateArray) < 0;
 
       const isDisabled = isBeforeMinDate || isAfterMaxDate;
 
       const className = clsx(theme.cell, {
-        [theme.isToday]: isSameDay(today, dateObj),
-        [theme.isSelected]: selected && isSameDay(selected, dateObj),
+        [theme.isToday]: !getDateArrayDiff(todayArray, dateArray),
+        [theme.isSelected]: selectedArray && !getDateArrayDiff(selectedArray, dateArray),
         [theme.isDisabled]: isDisabled,
         [theme.isInteractive]: !isDisabled && !isStartFiller && !isEndFiller,
       });
@@ -57,7 +54,7 @@ const renderMonth = ({ theme, month, minDate, maxDate, selected, onCellClick }) 
       if (!isStartFiller && !isEndFiller) {
         let handleClick;
         if (onCellClick && !isDisabled) {
-          handleClick = onCellClick.bind(null, dateObj);
+          handleClick = () => onCellClick(new Date(...dateArray));
         }
         label = <span className={theme.date} onClick={handleClick}>{date}</span>;
       }
