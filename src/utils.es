@@ -12,5 +12,5 @@ export const getMonthDetails = (date) => {
   const days = getDaysInMonth(date);
   const day = date.getDay();
   const offset = day === 0 ? 6 : day - 1;
-  return { date, days, offset };
+  return { days, offset };
 };
