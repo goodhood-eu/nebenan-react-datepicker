@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import addMonths from 'date-fns/addMonths';
 import setDate from 'date-fns/setDate';
 import isSameDay from 'date-fns/isSameDay';
+import startOfDay from 'date-fns/startOfDay';
 import { arrayOf, getMonthDetails } from './utils';
 
 const DAYS_COUNT = 7;
@@ -19,11 +20,21 @@ const renderLabelsRow = (locale, theme) => {
   return <tr>{labels}</tr>;
 };
 
-const renderMonth = ({ theme, month, minDate, maxDate, selected, onCellClick }) => {
+const renderMonth = ({
+  theme,
+  month,
+  minDate: providedMinDate,
+  maxDate: providedMaxDate,
+  selected,
+  onCellClick,
+}) => {
   const { days, offset } = getMonthDetails(month);
 
   const weeks = Math.ceil((days + offset) / DAYS_COUNT);
   const today = new Date();
+
+  const minDate = providedMinDate && startOfDay(providedMinDate);
+  const maxDate = providedMaxDate && startOfDay(providedMaxDate);
 
   const renderWeek = (week) => {
     const shift = week * DAYS_COUNT;

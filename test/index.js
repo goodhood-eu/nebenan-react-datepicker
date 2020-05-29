@@ -48,7 +48,7 @@ describe('MonthCalendar', () => {
       ...locale,
       theme,
       selected: new Date(2020, 3, 17),
-      minDate: new Date(2020, 2, 20),
+      minDate: new Date(2020, 2, 20, 12, 1, 10),
       onChange,
     };
 
