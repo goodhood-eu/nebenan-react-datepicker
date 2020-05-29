@@ -24,7 +24,7 @@ const renderMonth = ({
   theme,
   month,
   minDate: providedMinDate,
-  maxDate: providedMaxDate,
+  maxDate,
   selected,
   onCellClick,
 }) => {
@@ -34,7 +34,6 @@ const renderMonth = ({
   const today = new Date();
 
   const minDate = providedMinDate && startOfDay(providedMinDate);
-  const maxDate = providedMaxDate && startOfDay(providedMaxDate);
 
   const renderWeek = (week) => {
     const shift = week * DAYS_COUNT;
