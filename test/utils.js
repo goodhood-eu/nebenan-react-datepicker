@@ -1,10 +1,10 @@
-const { assert } = require('chai');
-const {
+import { assert } from 'chai';
+import {
   arrayOf,
   getMonth,
   getMonthLabel,
   getMonthDetails,
-} = require('../lib/utils');
+} from '../lib/utils';
 
 describe('utils', () => {
   describe('arrayOf', () => {

@@ -1,12 +1,12 @@
-const { createElement } = require('react');
-const { assert } = require('chai');
-const { mount } = require('enzyme');
-const { spy } = require('sinon');
+import { createElement } from 'react';
+import { assert } from 'chai';
+import { mount } from 'enzyme';
+import { spy } from 'sinon';
 
-const { findDate, findDatepicker, navigateToNextMonth, navigateToPreviousMonth } = require('./helpers');
-const locale = require('./locale');
-const theme = require('./theme');
-const MonthCalendar = require('../lib');
+import { findDate, findDatepicker, navigateToNextMonth, navigateToPreviousMonth } from './helpers';
+import locale from './locale';
+import theme from './theme';
+import MonthCalendar from '../lib';
 
 describe('MonthCalendar', () => {
   it('renders MonthCalendar', () => {

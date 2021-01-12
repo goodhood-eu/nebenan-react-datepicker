@@ -1,5 +1,8 @@
 module.exports = {
-  require: './test/setup',
+  require: [
+    '@babel/register',
+    './test/setup'
+  ],
   globals: 'document',
   'check-leaks': true,
   recursive: true,
