@@ -1,4 +1,3 @@
-import React from 'react';
 import clsx from 'clsx';
 import addMonths from 'date-fns/addMonths';
 import setDate from 'date-fns/setDate';

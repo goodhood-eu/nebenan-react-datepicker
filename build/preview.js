@@ -43,7 +43,14 @@ gulp.task('preview:babel', () => {
   const bundler = require('browserify')(browserifyOptions);
   const watcher = require('browserify-incremental')(bundler, cacheOptions);
 
-  watcher.transform(require('babelify').configure({ extensions: ['.jsx'] }));
+  watcher.transform(require('babelify').configure({
+    presets: [
+      ['@babel/preset-env', {
+        useBuiltIns: 'usage',
+        corejs: '3',
+      }],
+    ],
+  }));
 
   return watcher
     .bundle()
