@@ -1,7 +1,7 @@
 module.exports = {
   require: [
     '@babel/register',
-    './test/setup'
+    './test/setup.jsx'
   ],
   globals: 'document',
   'check-leaks': true,

@@ -19,8 +19,8 @@
     "prepublishOnly": "npm run check && npm run build",
     "lint": "stylelint \"./*.scss\" \"./**/*.scss\" && eslint --ext .jsx,.js ./",
     "lint:tofile": "eslint --ext .jsx,.js --no-color -o ./eslint-report.log ./",
-    "test": "npm run compile && TZ='GMT' NODE_ENV=test mocha \"test/**/*.js\"",
-    "test:tofile": "NODE_ENV=production npm run gulp compile && TZ='GMT' mocha --no-colors -R spec \"test/**/*.js\" 2>&1 | tee test-report.log",
+    "test": "npm run compile && TZ='GMT' NODE_ENV=test mocha \"test/**/*.jsx\"",
+    "test:tofile": "NODE_ENV=production npm run gulp compile && TZ='GMT' mocha --no-colors -R spec \"test/**/*.jsx\" 2>&1 | tee test-report.log",
     "start": "npm run gulp"
   },
   "devDependencies": {
