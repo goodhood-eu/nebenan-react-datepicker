@@ -1,7 +1,7 @@
 {
   "presets": [
-    "@babel/preset-env",
-    "@babel/preset-react"
+    ["@babel/preset-env"],
+    ["@babel/preset-react", { "runtime": "automatic" }]
   ],
   "plugins": [
     ["add-module-exports", { "addDefaultProperty": true }],
@@ -10,5 +10,15 @@
     "@babel/plugin-transform-runtime",
     "@babel/plugin-transform-strict-mode",
     "@babel/plugin-proposal-json-strings"
-  ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        ["@babel/preset-env", {
+          "useBuiltIns": "usage",
+          "corejs": "3"
+        }]
+      ]
+    }
+  }
 }

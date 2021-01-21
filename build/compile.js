@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 
-const SCRIPT_SOURCE = `${__dirname}/../src/**/*.es`;
+const SCRIPT_SOURCE = `${__dirname}/../src/**/*.jsx`;
 const SCRIPT_OUTPUT = `${__dirname}/../lib`;
 
 gulp.task('compile:clean', () => require('del')([SCRIPT_OUTPUT]));

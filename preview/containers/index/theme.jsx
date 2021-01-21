@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   controls: 'c-datepicker-controls',
   controlsPrevious: 'c-datepicker-controls-previous',
   controlsNext: 'c-datepicker-controls-next',

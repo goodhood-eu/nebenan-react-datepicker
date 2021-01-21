@@ -1,4 +1,4 @@
-require('@babel/register')({ extensions: ['.es'] });
+require('@babel/register')();
 const app = require('express')();
 const serveStatic = require('serve-static');
 const morgan = require('morgan');

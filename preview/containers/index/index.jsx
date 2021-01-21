@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Header from '../../components/header';
 import DatePicker from '../../../src';
 import locale from './locale';
