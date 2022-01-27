@@ -11,6 +11,8 @@ const SCRIPT_FILE = 'script.js';
 const STYLE_SOURCE = `${__dirname}/../preview/index.scss`;
 const STYLE_FILE = 'style.css';
 
+gulpSass.compiler = sass;
+
 const sassOptions = {
   fiber: require('fibers'),
   includePaths: [
